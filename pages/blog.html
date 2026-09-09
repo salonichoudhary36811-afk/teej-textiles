@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teej India Textiles</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C88A00',
+                        dark: '#292929'
+                    },
+                    fontFamily: {
+                     serif: ['Cormorant Garamond', 'serif'],
+                      sans: ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-dark">
+
+    <!-- Navbar -->
+    <nav class="border-b">
+
+        <div class="relative max-w-7xl mx-auto px-2">
+
+            <!-- Navbar Row -->
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Hamburger -->
+                <button id="menuButton" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html"
+                   class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-2xl md:text-4xl">Teej</h1>
+                        <p class="text-[10x] tracking-widest text-amber-500">
+                            India Textiles
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex gap-8 items-center justify-center">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                   <a href="private-label.html">Private Labels</a>
+                   <a href="oem-odm.html">OEM/ODM</a>
+                   <a href="factory.html">Factory</a>
+                   <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Request Catalog: Desktop only -->
+    <a 
+    href="pages/catalog.html"
+    class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
+        Request Catalog
+    </a>
+
+
+    <!-- Get Quote: Always visible -->
+    <a 
+    href="pages/quote.html"
+    class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
+        Get Quote
+    </a>
+
+</div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t py-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                    <a href="private-label.html">Private Labels</a>
+                    <a href="oem-odm.html">OEM/ODM</a>
+                    <a href="factory.html">Factory</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a> 
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
+
+        button.onclick = () => {
+            menu.classList.toggle('hidden');
+            button.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+        };
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section
+  class="relative min-h-[500px] sm:min-h-[540px] lg:min-h-[600px]
+         bg-[url('../images/home/blog.jpg')]
+         bg-cover bg-center bg-no-repeat"
+>
+  <!-- Soft overlay -->
+  <div class="absolute inset-0 bg-white/45"></div>
+
+  <div
+    class="relative z-10 max-w-7xl mx-auto
+           min-h-[500px] sm:min-h-[540px] lg:min-h-[600px]
+           px-6 sm:px-10 lg:px-16
+           flex items-center"
+  >
+
+    <div class="max-w-[560px]">
+
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-5 mb-6">
+        <p
+          class="font-['DM_Sans'] text-[10px] sm:text-[11px]
+                 tracking-[0.18em] uppercase text-[#C88A00]"
+        >
+          The Teej Journal
+        </p>
+
+        <span class="w-8 h-px bg-[#C88A00]"></span>
+      </div>
+
+      <!-- Heading -->
+      <h1
+        class="font-['Cormorant_Garamond'] font-normal
+               text-[44px] sm:text-[54px] lg:text-[64px]
+               leading-[0.98] tracking-[-0.3px]
+               text-[#292929]"
+      >
+        Stories from<br>
+        the <span class="italic text-[#C88A00]">making.</span>
+      </h1>
+
+      <!-- Description -->
+      <p
+        class="mt-8 max-w-[470px]
+               font-['DM_Sans'] text-[13px] sm:text-[14px]
+               leading-[1.65] text-[#555]"
+      >
+        Insights, ideas and experiences from the world of apparel
+        manufacturing — for the brands that build what's next.
+      </p>
+
+      <!-- CTA -->
+      <a
+        href="#latest"
+        class="inline-flex items-center gap-3 mt-9
+               border border-[#C88A00]
+               px-5 py-3
+               font-['DM_Sans'] text-[10px] sm:text-[11px]
+               tracking-[0.14em] uppercase
+               text-[#292929]
+               hover:bg-[#C88A00] hover:text-white
+               transition"
+      >
+        Explore Articles
+        <span class="text-sm">→</span>
+      </a>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[#FAF8F3] py-16 sm:py-20 lg:py-24 px-6 sm:px-10 lg:px-12">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Header -->
+    <div class="text-center max-w-3xl mx-auto">
+
+      <div class="flex items-center justify-center gap-4 mb-5">
+        <span class="w-8 h-px bg-[#C88A00]"></span>
+
+        <p
+          class="font-['DM_Sans'] text-[10px] sm:text-[11px]
+                 tracking-[0.18em] uppercase text-[#C88A00]"
+        >
+          Explore by Topic
+        </p>
+
+        <span class="w-8 h-px bg-[#C88A00]"></span>
+      </div>
+
+      <h2
+        class="font-['Cormorant_Garamond'] font-normal
+               text-[40px] sm:text-[50px] lg:text-[58px]
+               leading-[0.95] text-[#292929]"
+      >
+        Different stories.
+        <br>
+        <span class="italic text-[#C88A00]">
+          A bigger picture.
+        </span>
+      </h2>
+
+      <p
+        class="mt-6 max-w-2xl mx-auto
+               font-['DM_Sans'] text-[13px] sm:text-[14px]
+               leading-[1.7] text-[#666]"
+      >
+        Explore articles across every stage of the apparel journey —
+        from sourcing and design to manufacturing and beyond.
+      </p>
+
+    </div>
+
+
+    <!-- Desktop Journey -->
+    <div class="hidden lg:grid grid-cols-5 gap-0 mt-16">
+
+      <!-- 01 -->
+      <a href="blog/fabric-sourcing.html" class="group relative text-center">
+
+        <div class="relative h-[190px] flex items-center justify-center">
+
+          <div
+            class="absolute top-1/2 left-1/2
+                   w-full h-px bg-[#C88A00]/60"
+          ></div>
+
+          <span
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                   w-5 h-5 rounded-full bg-[#FAF8F3]
+                   border border-[#C88A00]
+                   z-10"
+          ></span>
+
+          <div
+            class="relative z-20 w-[155px] h-[155px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/blog-circle1.png"
+              alt="Fabric and sourcing"
+              class="w-full h-full object-cover
+                     group-hover:scale-105 transition duration-500"
+            >
+          </div>
+
+        </div>
+
+        <p class="font-['Cormorant_Garamond'] text-[18px] text-[#C88A00]">
+          01
+        </p>
+
+        <h3
+          class="mt-1 font-['Cormorant_Garamond']
+                 text-[24px] leading-[1] text-[#292929]"
+        >
+          Fabric &<br>
+          Sourcing
+        </h3>
+
+        <p class="mt-3 px-5 font-['DM_Sans'] text-[12px] leading-[1.5] text-[#777]">
+          Materials, sourcing tips and what makes a great fabric.
+        </p>
+
+        <span
+          class="inline-flex items-center gap-2 mt-5
+                 font-['DM_Sans'] text-[10px]
+                 tracking-[0.14em] uppercase
+                 text-[#C88A00]"
+        >
+          View Articles →
+        </span>
+
+      </a>
+
+
+      <!-- 02 -->
+      <a href="blog/design-development.html" class="group relative text-center">
+
+        <div class="relative h-[190px] flex items-center justify-center">
+
+          <div
+            class="absolute top-1/2 left-0 right-0
+                   h-px bg-[#C88A00]/60"
+          ></div>
+
+          <span
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                   w-5 h-5 rounded-full bg-[#FAF8F3]
+                   border border-[#C88A00]
+                   z-10"
+          ></span>
+
+          <div
+            class="relative z-20 w-[155px] h-[155px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/blog-circle2.png"
+              alt="Design and development"
+              class="w-full h-full object-cover
+                     group-hover:scale-105 transition duration-500"
+            >
+          </div>
+
+        </div>
+
+        <p class="font-['Cormorant_Garamond'] text-[18px] text-[#C88A00]">
+          02
+        </p>
+
+        <h3
+          class="mt-1 font-['Cormorant_Garamond']
+                 text-[24px] leading-[1] text-[#292929]"
+        >
+          Design &<br>
+          Development
+        </h3>
+
+        <p class="mt-3 px-5 font-['DM_Sans'] text-[12px] leading-[1.5] text-[#777]">
+          From ideas to samples — insights on turning concepts into collections.
+        </p>
+
+        <span
+          class="inline-flex items-center gap-2 mt-5
+                 font-['DM_Sans'] text-[10px]
+                 tracking-[0.14em] uppercase
+                 text-[#C88A00]"
+        >
+          View Articles →
+        </span>
+
+      </a>
+
+
+      <!-- 03 -->
+      <a href="blog/manufacturing-insights.html" class="group relative text-center">
+
+        <div class="relative h-[190px] flex items-center justify-center">
+
+          <div
+            class="absolute top-1/2 left-0 right-0
+                   h-px bg-[#C88A00]/60"
+          ></div>
+
+          <span
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                   w-5 h-5 rounded-full bg-[#FAF8F3]
+                   border border-[#C88A00]
+                   z-10"
+          ></span>
+
+          <div
+            class="relative z-20 w-[155px] h-[155px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/blog-circle3.png"
+              alt="Manufacturing insights"
+              class="w-full h-full object-cover
+                     group-hover:scale-105 transition duration-500"
+            >
+          </div>
+
+        </div>
+
+        <p class="font-['Cormorant_Garamond'] text-[18px] text-[#C88A00]">
+          03
+        </p>
+
+        <h3
+          class="mt-1 font-['Cormorant_Garamond']
+                 text-[24px] leading-[1] text-[#292929]"
+        >
+          Manufacturing<br>
+          Insights
+        </h3>
+
+        <p class="mt-3 px-5 font-['DM_Sans'] text-[12px] leading-[1.5] text-[#777]">
+          Behind the scenes of responsible and efficient production.
+        </p>
+
+        <span
+          class="inline-flex items-center gap-2 mt-5
+                 font-['DM_Sans'] text-[10px]
+                 tracking-[0.14em] uppercase
+                 text-[#C88A00]"
+        >
+          View Articles →
+        </span>
+
+      </a>
+
+
+      <!-- 04 -->
+      <a href="blog/brand-building.html" class="group relative text-center">
+
+        <div class="relative h-[190px] flex items-center justify-center">
+
+          <div
+            class="absolute top-1/2 left-0 right-0
+                   h-px bg-[#C88A00]/60"
+          ></div>
+
+          <span
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+                   w-5 h-5 rounded-full bg-[#FAF8F3]
+                   border border-[#C88A00]
+                   z-10"
+          ></span>
+
+          <div
+            class="relative z-20 w-[155px] h-[155px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/blog-circle4.png"
+              alt="Brand building"
+              class="w-full h-full object-cover
+                     group-hover:scale-105 transition duration-500"
+            >
+          </div>
+
+        </div>
+
+        <p class="font-['Cormorant_Garamond'] text-[18px] text-[#C88A00]">
+          04
+        </p>
+
+        <h3
+          class="mt-1 font-['Cormorant_Garamond']
+                 text-[24px] leading-[1] text-[#292929]"
+        >
+          Brand<br>
+          Building
+        </h3>
+
+        <p class="mt-3 px-5 font-['DM_Sans'] text-[12px] leading-[1.5] text-[#777]">
+          Practical advice for starting and growing your fashion brand.
+        </p>
+
+        <span
+          class="inline-flex items-center gap-2 mt-5
+                 font-['DM_Sans'] text-[10px]
+                 tracking-[0.14em] uppercase
+                 text-[#C88A00]"
+        >
+          View Articles →
+        </span>
+
+      </a>
+
+
+      <!-- 05 -->
+      <a href="blog/sustainability.html" class="group relative text-center">
+
+        <div class="relative h-[190px] flex items-center justify-center">
+
+          <div
+            class="absolute top-1/2 left-0 right-1/2
+                   h-px bg-[#C88A00]/60"
+          ></div>
+
+          <div
+            class="relative z-20 w-[155px] h-[155px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/blog-circle-5.png"
+              alt="Sustainability and innovation"
+              class="w-full h-full object-cover
+                     group-hover:scale-105 transition duration-500"
+            >
+          </div>
+
+        </div>
+
+        <p class="font-['Cormorant_Garamond'] text-[18px] text-[#C88A00]">
+          05
+        </p>
+
+        <h3
+          class="mt-1 font-['Cormorant_Garamond']
+                 text-[24px] leading-[1] text-[#292929]"
+        >
+          Sustainability<br>
+          & Innovation
+        </h3>
+
+        <p class="mt-3 px-5 font-['DM_Sans'] text-[12px] leading-[1.5] text-[#777]">
+          Ideas and initiatives for a more conscious fashion industry.
+        </p>
+
+        <span
+          class="inline-flex items-center gap-2 mt-5
+                 font-['DM_Sans'] text-[10px]
+                 tracking-[0.14em] uppercase
+                 text-[#C88A00]"
+        >
+          View Articles →
+        </span>
+
+      </a>
+
+    </div>
+
+
+    <!-- Mobile Journey -->
+    <div class="lg:hidden mt-12 sm:mt-14">
+
+      <div class="relative">
+
+        <!-- Vertical line -->
+        <div
+          class="absolute left-[35px] top-5 bottom-5
+                 w-px bg-[#C88A00]/40"
+        ></div>
+
+
+        <!-- Mobile Item 01 -->
+        <a
+          href="blog/fabric-sourcing.html"
+          class="relative flex items-center gap-5 pb-10"
+        >
+          <div
+            class="relative z-10 flex-shrink-0 w-[72px] h-[72px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/fabric.jpg"
+              alt="Fabric and sourcing"
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <div>
+            <p class="font-['Cormorant_Garamond'] text-[16px] text-[#C88A00]">
+              01
+            </p>
+
+            <h3
+              class="font-['Cormorant_Garamond']
+                     text-[23px] leading-none text-[#292929]"
+            >
+              Fabric & Sourcing
+            </h3>
+
+            <p class="mt-2 font-['DM_Sans'] text-[11px] leading-[1.5] text-[#777]">
+              Materials, sourcing tips and what makes a great fabric.
+            </p>
+          </div>
+        </a>
+
+
+        <!-- Mobile Item 02 -->
+        <a
+          href="blog/design-development.html"
+          class="relative flex items-center gap-5 pb-10"
+        >
+          <div
+            class="relative z-10 flex-shrink-0 w-[72px] h-[72px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/design.jpg"
+              alt="Design and development"
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <div>
+            <p class="font-['Cormorant_Garamond'] text-[16px] text-[#C88A00]">
+              02
+            </p>
+
+            <h3
+              class="font-['Cormorant_Garamond']
+                     text-[23px] leading-none text-[#292929]"
+            >
+              Design & Development
+            </h3>
+
+            <p class="mt-2 font-['DM_Sans'] text-[11px] leading-[1.5] text-[#777]">
+              From ideas to samples — insights on turning concepts into collections.
+            </p>
+          </div>
+        </a>
+
+
+        <!-- Mobile Item 03 -->
+        <a
+          href="blog/manufacturing-insights.html"
+          class="relative flex items-center gap-5 pb-10"
+        >
+          <div
+            class="relative z-10 flex-shrink-0 w-[72px] h-[72px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/manufacturing.jpg"
+              alt="Manufacturing insights"
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <div>
+            <p class="font-['Cormorant_Garamond'] text-[16px] text-[#C88A00]">
+              03
+            </p>
+
+            <h3
+              class="font-['Cormorant_Garamond']
+                     text-[23px] leading-none text-[#292929]"
+            >
+              Manufacturing Insights
+            </h3>
+
+            <p class="mt-2 font-['DM_Sans'] text-[11px] leading-[1.5] text-[#777]">
+              Behind the scenes of responsible and efficient production.
+            </p>
+          </div>
+        </a>
+
+
+        <!-- Mobile Item 04 -->
+        <a
+          href="blog/brand-building.html"
+          class="relative flex items-center gap-5 pb-10"
+        >
+          <div
+            class="relative z-10 flex-shrink-0 w-[72px] h-[72px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/private-label.jpg"
+              alt="Brand building"
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <div>
+            <p class="font-['Cormorant_Garamond'] text-[16px] text-[#C88A00]">
+              04
+            </p>
+
+            <h3
+              class="font-['Cormorant_Garamond']
+                     text-[23px] leading-none text-[#292929]"
+            >
+              Brand Building
+            </h3>
+
+            <p class="mt-2 font-['DM_Sans'] text-[11px] leading-[1.5] text-[#777]">
+              Practical advice for starting and growing your fashion brand.
+            </p>
+          </div>
+        </a>
+
+
+        <!-- Mobile Item 05 -->
+        <a
+          href="blog/sustainability.html"
+          class="relative flex items-center gap-5"
+        >
+          <div
+            class="relative z-10 flex-shrink-0 w-[72px] h-[72px]
+                   rounded-full overflow-hidden
+                   border-4 border-[#FAF8F3]"
+          >
+            <img
+              src="../images/home/sustainability.jpg"
+              alt="Sustainability and innovation"
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <div>
+            <p class="font-['Cormorant_Garamond'] text-[16px] text-[#C88A00]">
+              05
+            </p>
+
+            <h3
+              class="font-['Cormorant_Garamond']
+                     text-[23px] leading-none text-[#292929]"
+            >
+              Sustainability & Innovation
+            </h3>
+
+            <p class="mt-2 font-['DM_Sans'] text-[11px] leading-[1.5] text-[#777]">
+              Ideas and initiatives for a more conscious fashion industry.
+            </p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section id="latest" class="bg-white py-12 sm:py-14 lg:py-16 px-6 sm:px-10 lg:px-16">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="flex items-end justify-between mb-7 sm:mb-8">
+
+      <div>
+        <div class="flex items-center gap-4 mb-3">
+          <p
+            class="font-['DM_Sans'] text-[10px] sm:text-[11px]
+                   tracking-[0.16em] uppercase text-[#C88A00]"
+          >
+            Latest from the Journal
+          </p>
+
+          <span class="w-8 h-px bg-[#C88A00]"></span>
+        </div>
+
+        <h2
+          class="font-['Cormorant_Garamond'] font-normal
+                 text-[30px] sm:text-[36px] lg:text-[40px]
+                 leading-none text-[#292929]"
+        >
+          Latest from the Journal
+        </h2>
+      </div>
+
+      <!-- View All -->
+      <a
+        href="blog.html"
+        class="hidden sm:inline-flex items-center gap-3
+               font-['DM_Sans'] text-[10px] sm:text-[11px]
+               tracking-[0.13em] uppercase
+               text-[#C88A00]
+               hover:gap-4 transition-all"
+      >
+        View All Articles
+        <span class="text-sm">→</span>
+      </a>
+
+    </div>
+
+
+    <!-- Articles -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-7">
+
+      <!-- Card 1 -->
+      <a
+        href="blog/choosing-right-fabric.html"
+        class="group border border-[#E8E3D9] bg-white overflow-hidden"
+      >
+
+        <div class="h-[210px] sm:h-[190px] lg:h-[185px] overflow-hidden">
+          <img
+            src="../images/home/blogimg1.jpg"
+            alt="Fabric sourcing"
+            class="w-full h-full object-cover
+                   group-hover:scale-[1.03] transition duration-500"
+          >
+        </div>
+
+        <div class="px-5 py-3 sm:px-5 sm:py-5">
+
+          <span
+            class="inline-block mb-3
+                   bg-[#FAF8F3]
+                   px-2 py-1
+                   font-['DM_Sans'] text-[8px]
+                   tracking-[0.08em] uppercase
+                   text-[#C88A00]"
+          >
+            Fabric & Sourcing
+          </span>
+
+          <h3
+            class="font-['Cormorant_Garamond'] font-medium
+                   text-[22px] sm:text-[23px]
+                   leading-[1.05] text-[#292929]"
+          >
+            Choosing the right fabric
+            for your collection.
+          </h3>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span
+              class="font-['DM_Sans'] text-[11px]
+                     text-[#777]"
+            >
+              6 min read
+            </span>
+
+            <span
+              class="font-['DM_Sans'] text-[18px]
+                     text-[#C88A00]
+                     group-hover:translate-x-1 transition"
+            >
+              →
+            </span>
+
+          </div>
+        </div>
+
+      </a>
+
+
+      <!-- Card 2 -->
+      <a
+        href="blog/starting-clothing-brand.html"
+        class="group border border-[#E8E3D9] bg-white overflow-hidden"
+      >
+
+        <div class="h-[210px] sm:h-[190px] lg:h-[185px] overflow-hidden">
+          <img
+            src="../images/home/blogimg2.jpg"
+            alt="Private label clothing"
+            class="w-full h-full object-cover
+                   group-hover:scale-[1.03] transition duration-500"
+          >
+        </div>
+
+        <div class="px-5 py-5 sm:px-5 sm:py-5">
+
+          <span
+            class="inline-block mb-3
+                   bg-[#FAF8F3]
+                   px-2 py-1
+                   font-['DM_Sans'] text-[8px]
+                   tracking-[0.08em] uppercase
+                   text-[#C88A00]"
+          >
+            Private Label
+          </span>
+
+          <h3
+            class="font-['Cormorant_Garamond'] font-medium
+                   text-[22px] sm:text-[23px]
+                   leading-[1.05] text-[#292929]"
+          >
+            A practical guide to starting
+            your own clothing brand.
+          </h3>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span
+              class="font-['DM_Sans'] text-[11px]
+                     text-[#777]"
+            >
+              8 min read
+            </span>
+
+            <span
+              class="font-['DM_Sans'] text-[18px]
+                     text-[#C88A00]
+                     group-hover:translate-x-1 transition"
+            >
+              →
+            </span>
+
+          </div>
+        </div>
+
+      </a>
+
+
+      <!-- Card 3 -->
+      <a
+        href="blog/jaipur-manufacturing.html"
+        class="group border border-[#E8E3D9] bg-white overflow-hidden"
+      >
+
+        <div class="h-[210px] sm:h-[190px] lg:h-[185px] overflow-hidden">
+          <img
+            src="../images/home/blogimg3.jpg"
+            alt="Jaipur apparel manufacturing"
+            class="w-full h-full object-cover
+                   group-hover:scale-[1.03] transition duration-500"
+          >
+        </div>
+
+        <div class="px-5 py-5 sm:px-5 sm:py-5">
+
+          <span
+            class="inline-block mb-3
+                   bg-[#FAF8F3]
+                   px-2 py-1
+                   font-['DM_Sans'] text-[8px]
+                   tracking-[0.08em] uppercase
+                   text-[#C88A00]"
+          >
+            Manufacturing
+          </span>
+
+          <h3
+            class="font-['Cormorant_Garamond'] font-medium
+                   text-[22px] sm:text-[23px]
+                   leading-[1.05] text-[#292929]"
+          >
+            Inside our Jaipur
+            manufacturing unit.
+          </h3>
+
+          <div class="flex items-center justify-between mt-5">
+
+            <span
+              class="font-['DM_Sans'] text-[11px]
+                     text-[#777]"
+            >
+              5 min read
+            </span>
+
+            <span
+              class="font-['DM_Sans'] text-[18px]
+                     text-[#C88A00]
+                     group-hover:translate-x-1 transition"
+            >
+              →
+            </span>
+
+          </div>
+        </div>
+
+      </a>
+
+    </div>
+
+
+    <!-- Mobile View All -->
+    <div class="flex sm:hidden justify-end mt-6">
+      <a
+        href="blog.html"
+        class="inline-flex items-center gap-3
+               font-['DM_Sans'] text-[10px]
+               tracking-[0.13em] uppercase
+               text-[#C88A00]"
+      >
+        View All Articles
+        <span class="text-sm">→</span>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-[#121210] text-gray-400 px-6 py-12">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+
+      <!-- Brand -->
+      <div>
+        <h2 class="font-serif text-2xl tracking-[0.2em] text-white">
+          TEEJ India Textiles
+        </h2>
+
+        <p class="text-sm leading-6 mt-5 max-w-xs">
+          Women's apparel manufacturer and exporter from Jaipur, India.
+          Est. 2011.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mt-7">
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            IEC CERTIFIED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            GST REGISTERED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            EST. 2011
+          </span>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">PRODUCTS</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#">Dresses</a>
+          <a href="#">Co-ord Sets</a>
+          <a href="#" class="block text-white">Resort Wear</a>
+          <a href="#">Kaftans</a>
+          <a href="#">Plus Size</a>
+          <a href="#" class="block">View all →</a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">SERVICES</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">Private Label</a>
+          <a href="#" class="block">OEM / ODM</a>
+          <a href="#" class="block">Sampling</a>
+          <a href="#" class="block">Custom Manufacturing</a>
+          <a href="#" class="block">Quality Control</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">COMPANY</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">About Us</a>
+          <a href="#" class="block">Factory</a>
+          <a href="#" class="block">Export Markets</a>
+          <a href="#" class="block">Blog</a>
+          <a href="#" class="block">Contact</a>
+          <a href="#" class="block text-amber-400">Get Quote →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-12 pt-7 flex flex-col
+                md:flex-row justify-between gap-4 text-xs">
+
+      <p>
+        © 2025 Teej India Textiles. All rights reserved.
+        Jaipur, Rajasthan, India.
+      </p>
+
+      <div class="flex gap-6">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

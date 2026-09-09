@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teej India Textiles</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C88A00',
+                        dark: '#292929'
+                    },
+                    fontFamily: {
+                     serif: ['Cormorant Garamond', 'serif'],
+                      sans: ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-dark">
+
+    <!-- Navbar -->
+    <nav class="border-b">
+
+        <div class="relative max-w-7xl mx-auto px-2">
+
+            <!-- Navbar Row -->
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Hamburger -->
+                <button id="menuButton" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html"
+                   class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-2xl md:text-4xl">Teej</h1>
+                        <p class="text-[10x] tracking-widest text-amber-500">
+                            India Textiles
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex gap-8 items-center justify-center">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                   <a href="private-label.html">Private Labels</a>
+                   <a href="oem-odm.html">OEM/ODM</a>
+                   <a href="factory.html">Factory</a>
+                   <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Request Catalog: Desktop only -->
+    <a 
+    href="pages/catalog.html"
+    class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
+        Request Catalog
+    </a>
+
+
+    <!-- Get Quote: Always visible -->
+    <a 
+    href="pages/quote.html"
+    class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
+        Get Quote
+    </a>
+
+</div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t py-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                    <a href="private-label.html">Private Labels</a>
+                    <a href="oem-odm.html">OEM/ODM</a>
+                    <a href="factory.html">Factory</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a> 
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
+
+        button.onclick = () => {
+            menu.classList.toggle('hidden');
+            button.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+        };
+    </script>
+
+
+
+<section
+  class="relative min-h-[720px] sm:min-h-[760px] lg:min-h-[700px]
+         bg-[url('../images/private-label/private-label.png')]
+         bg-cover bg-center bg-no-repeat"
+>
+  <!-- Soft overlay -->
+  <div class="absolute inset-0 bg-white/35"></div>
+
+  <div
+    class="relative z-10 max-w-7xl mx-auto
+           min-h-[720px] sm:min-h-[760px] lg:min-h-[700px]
+           px-6 sm:px-10 lg:px-12
+           pt-12 sm:pt-16 lg:pt-0
+           pb-28 sm:pb-32 lg:pb-24
+           flex items-center"
+  >
+
+    <!-- Left Content -->
+    <div class="w-full lg:w-[48%] max-w-[560px]">
+
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-4 mb-5">
+        <p
+          class="font-['DM_Sans'] text-[9px] sm:text-[10px]
+                 tracking-[0.18em] uppercase text-[#C88A00]"
+        >
+          Private Label Manufacturing
+        </p>
+
+        <span class="w-8 h-px bg-[#C88A00]"></span>
+      </div>
+
+
+      <!-- Heading -->
+      <h1
+        class="font-['Cormorant_Garamond'] font-normal
+               text-[43px] sm:text-[54px] lg:text-[64px]
+               leading-[0.92] tracking-[-0.4px]
+               text-[#292929]"
+      >
+        Your Vision.
+        <br>
+        <span class="italic text-[#C88A00]">
+          Our Expertise.
+        </span>
+      </h1>
+
+
+      <!-- Description -->
+      <p
+        class="mt-6 max-w-[500px]
+               font-['DM_Sans'] text-[12px] sm:text-[13px]
+               leading-[1.65] text-[#444]"
+      >
+        Launch your clothing brand with a trusted manufacturing
+        partner. From concept to final product, we handle
+        everything — so you can focus on what you do best,
+        building your brand.
+      </p>
+
+
+      <!-- Benefits -->
+      <div class="mt-6 space-y-3">
+
+        <div class="flex items-center gap-3">
+          <span
+            class="w-5 h-5 flex-shrink-0 rounded-full
+                   bg-[#C88A00] text-white
+                   flex items-center justify-center
+                   text-[10px]"
+          >
+            ✓
+          </span>
+
+          <p class="font-['DM_Sans'] text-[12px] sm:text-[13px] text-[#444]">
+            Low MOQ, high flexibility
+          </p>
+        </div>
+
+
+        <div class="flex items-center gap-3">
+          <span
+            class="w-5 h-5 flex-shrink-0 rounded-full
+                   bg-[#C88A00] text-white
+                   flex items-center justify-center
+                   text-[10px]"
+          >
+            ✓
+          </span>
+
+          <p class="font-['DM_Sans'] text-[12px] sm:text-[13px] text-[#444]">
+            End-to-end support (design to delivery)
+          </p>
+        </div>
+
+
+        <div class="flex items-center gap-3">
+          <span
+            class="w-5 h-5 flex-shrink-0 rounded-full
+                   bg-[#C88A00] text-white
+                   flex items-center justify-center
+                   text-[10px]"
+          >
+            ✓
+          </span>
+
+          <p class="font-['DM_Sans'] text-[12px] sm:text-[13px] text-[#444]">
+            Premium quality with ethical manufacturing
+          </p>
+        </div>
+
+
+        <div class="flex items-center gap-3">
+          <span
+            class="w-5 h-5 flex-shrink-0 rounded-full
+                   bg-[#C88A00] text-white
+                   flex items-center justify-center
+                   text-[10px]"
+          >
+            ✓
+          </span>
+
+          <p class="font-['DM_Sans'] text-[12px] sm:text-[13px] text-[#444]">
+            Customized solutions for your brand
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row gap-3 mt-7">
+
+        <a
+          href="quote.html"
+          class="inline-flex items-center justify-center gap-3
+                 bg-[#C88A00] text-white
+                 px-6 py-3
+                 font-['DM_Sans'] text-[10px] sm:text-[11px]
+                 tracking-[0.08em] uppercase
+                 hover:bg-[#a97000] transition"
+        >
+          Start Your Brand
+          <span class="text-sm">→</span>
+        </a>
+
+
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center gap-3
+                 border border-[#777]
+                 bg-white/50
+                 px-6 py-3
+                 font-['DM_Sans'] text-[10px] sm:text-[11px]
+                 tracking-[0.08em] uppercase
+                 text-[#292929]
+                 hover:bg-white transition"
+        >
+          <span>◉</span>
+          Talk to Our Team
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Consultation Form -->
+    <div
+      class="hidden lg:block absolute
+             right-8 xl:right-12
+             top-1/2 -translate-y-1/2
+             w-[330px] xl:w-[350px]"
+    >
+
+      <div
+        class="bg-white/95 backdrop-blur-sm
+               rounded-lg shadow-[0_8px_30px_rgba(0,0,0,0.10)]
+               p-6 xl:p-7"
+      >
+
+        <p
+          class="font-['DM_Sans'] text-[9px]
+                 tracking-[0.16em] uppercase
+                 text-[#C88A00] mb-2"
+        >
+          Get Started
+        </p>
+
+        <h2
+          class="font-['Cormorant_Garamond']
+                 text-[28px] xl:text-[30px]
+                 leading-none text-[#292929]"
+        >
+          Start your
+          <br>
+          private label project
+        </h2>
+
+        <p
+          class="mt-3
+                 font-['DM_Sans'] text-[11px]
+                 leading-[1.5] text-[#666]"
+        >
+          Share a few details and we'll get back to you
+          with a customized solution.
+        </p>
+
+
+        <!-- Form -->
+        <form class="mt-5 space-y-3">
+
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full border border-[#DEDAD2]
+                   bg-white px-3 py-2.5
+                   font-['DM_Sans'] text-[11px]
+                   outline-none focus:border-[#C88A00]"
+          >
+
+          <input
+            type="text"
+            placeholder="Brand / Company Name"
+            class="w-full border border-[#DEDAD2]
+                   bg-white px-3 py-2.5
+                   font-['DM_Sans'] text-[11px]
+                   outline-none focus:border-[#C88A00]"
+          >
+
+          <div class="grid grid-cols-2 gap-2">
+
+            <select
+              class="border border-[#DEDAD2]
+                     bg-white px-3 py-2.5
+                     font-['DM_Sans'] text-[11px]
+                     text-[#666] outline-none"
+            >
+              <option>Country</option>
+              <option>India</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>UAE</option>
+            </select>
+
+            <input
+              type="email"
+              placeholder="Email"
+              class="border border-[#DEDAD2]
+                     bg-white px-3 py-2.5
+                     font-['DM_Sans'] text-[11px]
+                     outline-none focus:border-[#C88A00]"
+            >
+
+          </div>
+
+
+          <div class="grid grid-cols-2 gap-2">
+
+            <select
+              class="border border-[#DEDAD2]
+                     bg-white px-3 py-2.5
+                     font-['DM_Sans'] text-[11px]
+                     text-[#666] outline-none"
+            >
+              <option>Product Category</option>
+              <option>Dresses</option>
+              <option>Co-ord Sets</option>
+              <option>Resort Wear</option>
+              <option>Tops & Blouses</option>
+            </select>
+
+            <select
+              class="border border-[#DEDAD2]
+                     bg-white px-3 py-2.5
+                     font-['DM_Sans'] text-[11px]
+                     text-[#666] outline-none"
+            >
+              <option>Estimated Quantity</option>
+              <option>100–500</option>
+              <option>500–1000</option>
+              <option>1000–5000</option>
+              <option>5000+</option>
+            </select>
+
+          </div>
+
+
+          <textarea
+            rows="3"
+            placeholder="Tell us about your project..."
+            class="w-full border border-[#DEDAD2]
+                   bg-white px-3 py-2.5
+                   font-['DM_Sans'] text-[11px]
+                   outline-none resize-none
+                   focus:border-[#C88A00]"
+          ></textarea>
+
+
+          <button
+            type="submit"
+            class="w-full bg-[#C88A00] text-white
+                   py-3
+                   font-['DM_Sans'] text-[10px]
+                   tracking-[0.08em] uppercase
+                   hover:bg-[#a97000] transition"
+          >
+            Request Private Label Consultation →
+          </button>
+
+          <p
+            class="text-center
+                   font-['DM_Sans'] text-[9px]
+                   text-[#888]"
+          >
+            We respect your privacy. No spam, ever.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Stats Bar -->
+  <div
+    class="absolute bottom-0 left-0 right-0
+           bg-white/90 backdrop-blur-sm
+           border-t border-[#E8E3D9]"
+  >
+
+    <div
+      class="max-w-7xl mx-auto
+             grid grid-cols-2 lg:grid-cols-4"
+    >
+
+      <!-- Stat -->
+      <div
+        class="px-6 py-4 lg:py-5
+               border-r border-b lg:border-b-0 border-[#E8E3D9]"
+      >
+        <p
+          class="font-['Cormorant_Garamond']
+                 text-[25px] sm:text-[28px]
+                 leading-none text-[#292929]"
+        >
+          15+
+        </p>
+
+        <p
+          class="mt-1 font-['DM_Sans']
+                 text-[9px] sm:text-[10px]
+                 text-[#777]"
+        >
+          Years Experience
+        </p>
+      </div>
+
+
+      <!-- Stat -->
+      <div
+        class="px-6 py-4 lg:py-5
+               lg:border-r border-b lg:border-b-0 border-[#E8E3D9]"
+      >
+        <p
+          class="font-['Cormorant_Garamond']
+                 text-[25px] sm:text-[28px]
+                 leading-none text-[#292929]"
+        >
+          400K+
+        </p>
+
+        <p
+          class="mt-1 font-['DM_Sans']
+                 text-[9px] sm:text-[10px]
+                 text-[#777]"
+        >
+          Garments / Year
+        </p>
+      </div>
+
+
+      <!-- Stat -->
+      <div
+        class="px-6 py-4 lg:py-5
+               border-r border-[#E8E3D9]"
+      >
+        <p
+          class="font-['Cormorant_Garamond']
+                 text-[25px] sm:text-[28px]
+                 leading-none text-[#292929]"
+        >
+          10+
+        </p>
+
+        <p
+          class="mt-1 font-['DM_Sans']
+                 text-[9px] sm:text-[10px]
+                 text-[#777]"
+        >
+          Export Markets
+        </p>
+      </div>
+
+
+      <!-- Stat -->
+      <div class="px-6 py-4 lg:py-5">
+
+        <p
+          class="font-['Cormorant_Garamond']
+                 text-[25px] sm:text-[28px]
+                 leading-none text-[#292929]"
+        >
+          100+
+        </p>
+
+        <p
+          class="mt-1 font-['DM_Sans']
+                 text-[9px] sm:text-[10px]
+                 text-[#777]"
+        >
+          Happy Brands
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-white py-10 sm:py-12 lg:py-14 px-6 sm:px-10 lg:px-12">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center">
+
+      <p
+        class="font-['DM_Sans'] text-[9px] sm:text-[10px]
+               font-semibold tracking-[0.18em]
+               uppercase text-[#C88A00]"
+      >
+        How It Works
+      </p>
+
+      <h2
+        class="mt-2 font-['Cormorant_Garamond']
+               font-medium text-[30px] sm:text-[40px] lg:text-[46px]
+               leading-[0.98] tracking-[-0.2px]
+               text-[#292929]"
+      >
+        Your brand, manufactured
+        <span class="italic text-[#C88A00]">
+          end to end.
+        </span>
+      </h2>
+
+      <p
+        class="mt-3 max-w-2xl mx-auto
+               font-['DM_Sans'] text-[10.5px] sm:text-[12px]
+               leading-[1.5] text-[#666]"
+      >
+        One partner from first sketch to finished garments.
+        Everything you need to build your brand.
+      </p>
+
+    </div>
+
+
+    <!-- Process -->
+    <div class="relative mt-9 sm:mt-11 lg:mt-12">
+
+      <!-- Connecting Lines -->
+      <div
+        class="hidden lg:block absolute
+               left-[10%] right-[10%] top-[38px]
+               h-px bg-[#C88A00]/45"
+      ></div>
+
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5
+               gap-10 sm:gap-11 lg:gap-3"
+      >
+
+
+        <!-- 01 -->
+        <div class="relative text-center">
+
+          <!-- Circle -->
+          <div
+            class="relative z-10 mx-auto
+                   w-[76px] h-[76px]
+                   rounded-full
+                   border-[1.5px] border-[#C88A00]/45
+                   bg-white
+                   flex items-center justify-center"
+          >
+            <i
+              data-lucide="pencil"
+              class="w-[29px] h-[29px]
+                     text-[#C88A00] stroke-[1.45]"
+            ></i>
+          </div>
+
+          <p
+            class="mt-3
+                   font-['DM_Sans']
+                   text-[11px]
+                   font-semibold
+                   text-[#555]"
+          >
+            01
+          </p>
+
+          <h3
+            class="mt-1
+         font-['Cormorant_Garamond']
+         text-[21px] sm:text-[22px]
+         font-[450]
+         leading-[1]
+         text-[#292929]"
+          >
+            Design & Development
+          </h3>
+
+          <p
+            class="mt-2 max-w-[185px] mx-auto
+                   font-['DM_Sans']
+                   text-[11.5px]
+                   leading-[1.45]
+                   text-[#666]"
+          >
+            Share your ideas, we create
+            patterns and samples.
+          </p>
+
+        </div>
+
+
+        <!-- 02 -->
+        <div class="relative text-center">
+
+          <div
+            class="relative z-10 mx-auto
+                   w-[76px] h-[76px]
+                   rounded-full
+                   border-[1.5px] border-[#C88A00]/45
+                   bg-white
+                   flex items-center justify-center"
+          >
+            <i
+              data-lucide="layers"
+              class="w-[29px] h-[29px]
+                     text-[#C88A00] stroke-[1.45]"
+            ></i>
+          </div>
+
+          <p
+            class="mt-3
+                   font-['DM_Sans']
+                   text-[11px]
+                   font-semibold
+                   text-[#555]"
+          >
+            02
+          </p>
+
+          <h3
+            class="mt-1
+         font-['Cormorant_Garamond']
+         text-[21px] sm:text-[22px]
+         font-[450]
+         leading-[1]
+         text-[#292929]"
+          >
+            Sourcing
+          </h3>
+
+          <p
+            class="mt-2 max-w-[185px] mx-auto
+                   font-['DM_Sans']
+                   text-[11.5px]
+                   leading-[1.45]
+                   text-[#666]"
+          >
+            We source the best fabrics,
+            trims and materials.
+          </p>
+
+        </div>
+
+
+        <!-- 03 -->
+        <div class="relative text-center">
+
+          <div
+            class="relative z-10 mx-auto
+                   w-[76px] h-[76px]
+                   rounded-full
+                   border-[1.5px] border-[#C88A00]/45
+                   bg-white
+                   flex items-center justify-center"
+          >
+            <i
+              data-lucide="scissors"
+              class="w-[29px] h-[29px]
+                     text-[#C88A00] stroke-[1.45]"
+            ></i>
+          </div>
+
+          <p
+            class="mt-3
+                   font-['DM_Sans']
+                   text-[11px]
+                   font-semibold
+                   text-[#555]"
+          >
+            03
+          </p>
+
+          <h3
+            class="mt-1
+         font-['Cormorant_Garamond']
+         text-[21px] sm:text-[22px]
+         font-[450]
+         leading-[1]
+         text-[#292929]"
+          >
+            Sampling
+          </h3>
+
+          <p
+            class="mt-2 max-w-[185px] mx-auto
+                   font-['DM_Sans']
+                   text-[11.5px]
+                   leading-[1.45]
+                   text-[#666]"
+          >
+            Samples are crafted,
+            reviewed and approved.
+          </p>
+
+        </div>
+
+
+        <!-- 04 -->
+        <div class="relative text-center">
+
+          <div
+            class="relative z-10 mx-auto
+                   w-[76px] h-[76px]
+                   rounded-full
+                   border-[1.5px] border-[#C88A00]/45
+                   bg-white
+                   flex items-center justify-center"
+          >
+            <i
+              data-lucide="circle-check"
+              class="w-[29px] h-[29px]
+                     text-[#C88A00] stroke-[1.45]"
+            ></i>
+          </div>
+
+          <p
+            class="mt-3
+                   font-['DM_Sans']
+                   text-[11px]
+                   font-semibold
+                   text-[#555]"
+          >
+            04
+          </p>
+
+          <h3
+            class="mt-1
+         font-['Cormorant_Garamond']
+         text-[21px] sm:text-[22px]
+         font-[450]
+         leading-[1]
+         text-[#292929]"
+          >
+            Production
+          </h3>
+
+          <p
+            class="mt-2 max-w-[185px] mx-auto
+                   font-['DM_Sans']
+                   text-[11.5px]
+                   leading-[1.45]
+                   text-[#666]"
+          >
+            Bulk production with strict
+            quality control.
+          </p>
+
+        </div>
+
+
+        <!-- 05 -->
+        <div class="relative text-center">
+
+          <div
+            class="relative z-10 mx-auto
+                   w-[76px] h-[76px]
+                   rounded-full
+                   border-[1.5px] border-[#C88A00]/45
+                   bg-white
+                   flex items-center justify-center"
+          >
+            <i
+              data-lucide="package"
+              class="w-[29px] h-[29px]
+                     text-[#C88A00] stroke-[1.45]"
+            ></i>
+          </div>
+
+          <p
+            class="mt-3
+                   font-['DM_Sans']
+                   text-[11px]
+                   font-semibold
+                   text-[#555]"
+          >
+            05
+          </p>
+
+          <h3
+            class="mt-1
+         font-['Cormorant_Garamond']
+         text-[21px] sm:text-[22px]
+         font-[450]
+         leading-[1]
+         text-[#292929]">
+            Delivery
+          </h3>
+
+          <p
+            class="mt-2 max-w-[185px] mx-auto
+                   font-['DM_Sans']
+                   text-[11.5px]
+                   leading-[1.45]
+                   text-[#666]"
+          >
+            Finished garments packed
+            and delivered to your doorstep.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+
+
+
+
+
+
+<section class="bg-white py-12 sm:py-14 lg:py-16 px-5 sm:px-8 lg:px-12">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="text-center max-w-2xl mx-auto">
+
+      <p
+        class="font-['DM_Sans'] text-[9px] sm:text-[10px]
+               tracking-[0.18em] uppercase text-[#C88A00]"
+      >
+        What We Can Make
+      </p>
+
+      <h2
+        class="mt-2 font-['Cormorant_Garamond'] font-normal
+               text-[34px] sm:text-[42px] lg:text-[48px]
+               leading-none text-[#292929]"
+      >
+        Fashion for every vision.
+      </h2>
+
+      <p
+        class="mt-3 font-['DM_Sans']
+               text-[11px] sm:text-[12px]
+               leading-[1.55] text-[#777]"
+      >
+        From everyday essentials to elevated collections,
+        we manufacture a wide range of apparel for growing brands.
+      </p>
+
+    </div>
+
+
+    <!-- Categories -->
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6
+             gap-3 sm:gap-4 lg:gap-3 mt-9 sm:mt-10"
+    >
+
+      <!-- Dresses -->
+      <a
+        href="products.html#dresses"
+        class="group overflow-hidden
+               border border-[#E8E3D9]
+               bg-[#FCFBF8]
+               rounded-md"
+      >
+        <div class="aspect-[0.88] overflow-hidden">
+          <img
+            src="../images/home/dress.jpg"
+            alt="Dresses"
+            class="w-full h-full object-cover object-top
+                   group-hover:scale-[1.03]
+                   transition duration-500"
+          >
+        </div>
+
+        <div class="text-center px-3 py-4">
+
+          <h3
+            class="font-['Cormorant_Garamond']
+                   text-[19px] sm:text-[20px]
+                   leading-none text-[#292929]"
+          >
+            Dresses
+          </h3>
+
+          <p
+            class="mt-2 font-['DM_Sans']
+                   text-[9px] text-[#777]"
+          >
+            MOQ 100 pcs
+          </p>
+
+          <span
+            class="inline-flex items-center gap-1 mt-3
+                   font-['DM_Sans'] text-[9px]
+                   font-medium text-[#C88A00]"
+          >
+            View Styles →
+          </span>
+
+        </div>
+      </a>
+
+
+      <!-- Co-ord Sets -->
+      <a
+        href="products.html#co-ord-sets"
+        class="group overflow-hidden
+               border border-[#E8E3D9]
+               bg-[#FCFBF8]
+               rounded-md"
+      >
+        <div class="aspect-[0.88] overflow-hidden">
+          <img
+            src="../images/home/co-ordset.jpg"
+            alt="Co-ord Sets"
+            class="w-full h-full object-cover object-top
+                   group-hover:scale-[1.03]
+                   transition duration-500"
+          >
+        </div>
+
+        <div class="text-center px-3 py-4">
+
+          <h3
+            class="font-['Cormorant_Garamond']
+                   text-[19px] sm:text-[20px]
+                   leading-none text-[#292929]"
+          >
+            Co-ord Sets
+          </h3>
+
+          <p class="mt-2 font-['DM_Sans'] text-[9px] text-[#777]">
+            MOQ 100 pcs
+          </p>
+
+          <span
+            class="inline-flex items-center gap-1 mt-3
+                   font-['DM_Sans'] text-[9px]
+                   font-medium text-[#C88A00]"
+          >
+            View Styles →
+          </span>
+
+        </div>
+      </a>
+
+
+      <!-- Resort Wear -->
+      <a
+        href="products.html#resort-wear"
+        class="group overflow-hidden
+               border border-[#E8E3D9]
+               bg-[#FCFBF8]
+               rounded-md"
+      >
+        <div class="aspect-[0.88] overflow-hidden">
+          <img
+            src="../images/home/resortwear.jpg"
+            alt="Resort Wear"
+            class="w-full h-full object-cover object-top
+                   group-hover:scale-[1.03]
+                   transition duration-500"
+          >
+        </div>
+
+        <div class="text-center px-3 py-4">
+
+          <h3
+            class="font-['Cormorant_Garamond']
+                   text-[19px] sm:text-[20px]
+                   leading-none text-[#292929]"
+          >
+            Resort Wear
+          </h3>
+
+          <p class="mt-2 font-['DM_Sans'] text-[9px] text-[#777]">
+            MOQ 100 pcs
+          </p>
+
+          <span
+            class="inline-flex items-center gap-1 mt-3
+                   font-['DM_Sans'] text-[9px]
+                   font-medium text-[#C88A00]"
+          >
+            View Styles →
+          </span>
+
+        </div>
+      </a>
+
+
+      <!-- Tops & Blouses -->
+      <a
+        href="products.html#tops-blouses"
+        class="group overflow-hidden
+               border border-[#E8E3D9]
+               bg-[#FCFBF8]
+               rounded-md"
+      >
+        <div class="aspect-[0.88] overflow-hidden">
+          <img
+            src="../images/home/tops-tuincs.jpg"
+            alt="Tops and Blouses"
+            class="w-full h-full object-cover object-top
+                   group-hover:scale-[1.03]
+                   transition duration-500"
+          >
+        </div>
+
+        <div class="text-center px-3 py-4">
+
+          <h3
+            class="font-['Cormorant_Garamond']
+                   text-[19px] sm:text-[20px]
+                   leading-none text-[#292929]"
+          >
+            Tops & Blouses
+          </h3>
+
+          <p class="mt-2 font-['DM_Sans'] text-[9px] text-[#777]">
+            MOQ 100 pcs
+          </p>
+
+          <span
+            class="inline-flex items-center gap-1 mt-3
+                   font-['DM_Sans'] text-[9px]
+                   font-medium text-[#C88A00]"
+          >
+            View Styles →
+          </span>
+
+        </div>
+      </a>
+
+
+      <!-- Loungewear -->
+      <a
+        href="products.html#loungewear"
+        class="group overflow-hidden
+               border border-[#E8E3D9]
+               bg-[#FCFBF8]
+               rounded-md"
+      >
+        <div class="aspect-[0.88] overflow-hidden">
+          <img
+            src="../images/home/kaftan.jpg"
+            alt="Loungewear"
+            class="w-full h-full object-cover object-top
+                   group-hover:scale-[1.03]
+                   transition duration-500"
+          >
+        </div>
+
+        <div class="text-center px-3 py-4">
+
+          <h3
+            class="font-['Cormorant_Garamond']
+                   text-[19px] sm:text-[20px]
+                   leading-none text-[#292929]"
+          >
+            Loungewear
+          </h3>
+
+          <p class="mt-2 font-['DM_Sans'] text-[9px] text-[#777]">
+            MOQ 100 pcs
+          </p>
+
+          <span
+            class="inline-flex items-center gap-1 mt-3
+                   font-['DM_Sans'] text-[9px]
+                   font-medium text-[#C88A00]"
+          >
+            View Styles →
+          </span>
+
+        </div>
+      </a>
+
+
+      <!-- Kidswear -->
+      <a
+        href="products.html#kidswear"
+        class="group overflow-hidden
+               border border-[#E8E3D9]
+               bg-[#FCFBF8]
+               rounded-md"
+      >
+        <div class="aspect-[0.88] overflow-hidden">
+          <img
+            src="../images/home/resot.jpg"
+            alt="Kidswear"
+            class="w-full h-full object-cover object-top
+                   group-hover:scale-[1.03]
+                   transition duration-500"
+          >
+        </div>
+
+        <div class="text-center px-3 py-4">
+
+          <h3
+            class="font-['Cormorant_Garamond']
+                   text-[19px] sm:text-[20px]
+                   leading-none text-[#292929]"
+          >
+            Kidswear
+          </h3>
+
+          <p class="mt-2 font-['DM_Sans'] text-[9px] text-[#777]">
+            MOQ 100 pcs
+          </p>
+
+          <span
+            class="inline-flex items-center gap-1 mt-3
+                   font-['DM_Sans'] text-[9px]
+                   font-medium text-[#C88A00]"
+          >
+            View Styles →
+          </span>
+
+        </div>
+      </a>
+
+    </div>
+
+
+    <!-- View All -->
+    <div class="flex justify-center mt-7">
+
+      <a
+        href="products.html"
+        class="inline-flex items-center gap-3
+               border border-[#C88A00]
+               px-6 py-2.5
+               font-['DM_Sans'] text-[10px]
+               tracking-[0.08em] uppercase
+               text-[#C88A00]
+               hover:bg-[#C88A00]
+               hover:text-white
+               transition"
+      >
+        View All Categories
+        <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<footer class="bg-[#121210] text-gray-400 px-6 py-12">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+
+      <!-- Brand -->
+      <div>
+        <h2 class="font-serif text-2xl tracking-[0.2em] text-white">
+          TEEJ India Textiles
+        </h2>
+
+        <p class="text-sm leading-6 mt-5 max-w-xs">
+          Women's apparel manufacturer and exporter from Jaipur, India.
+          Est. 2011.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mt-7">
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            IEC CERTIFIED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            GST REGISTERED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            EST. 2011
+          </span>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">PRODUCTS</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#">Dresses</a>
+          <a href="#">Co-ord Sets</a>
+          <a href="#" class="block text-white">Resort Wear</a>
+          <a href="#">Kaftans</a>
+          <a href="#">Plus Size</a>
+          <a href="#" class="block">View all →</a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">SERVICES</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">Private Label</a>
+          <a href="#" class="block">OEM / ODM</a>
+          <a href="#" class="block">Sampling</a>
+          <a href="#" class="block">Custom Manufacturing</a>
+          <a href="#" class="block">Quality Control</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">COMPANY</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">About Us</a>
+          <a href="#" class="block">Factory</a>
+          <a href="#" class="block">Export Markets</a>
+          <a href="#" class="block">Blog</a>
+          <a href="#" class="block">Contact</a>
+          <a href="#" class="block text-amber-400">Get Quote →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-12 pt-7 flex flex-col
+                md:flex-row justify-between gap-4 text-xs">
+
+      <p>
+        © 2025 Teej India Textiles. All rights reserved.
+        Jaipur, Rajasthan, India.
+      </p>
+
+      <div class="flex gap-6">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>

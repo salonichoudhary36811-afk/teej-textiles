@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teej India Textiles</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C88A00',
+                        dark: '#292929'
+                    },
+                    fontFamily: {
+                     serif: ['Cormorant Garamond', 'serif'],
+                      sans: ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-dark">
+
+    <!-- Navbar -->
+    <nav class="border-b">
+
+        <div class="relative max-w-7xl mx-auto px-2">
+
+            <!-- Navbar Row -->
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Hamburger -->
+                <button id="menuButton" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html"
+                   class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-2xl md:text-4xl">Teej</h1>
+                        <p class="text-[10x] tracking-widest text-amber-500">
+                            India Textiles
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex gap-8 items-center justify-center">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                   <a href="private-label.html">Private Labels</a>
+                   <a href="oem-odm.html">OEM/ODM</a>
+                   <a href="factory.html">Factory</a>
+                   <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Request Catalog: Desktop only -->
+    <a 
+    href="pages/catalog.html"
+    class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
+        Request Catalog
+    </a>
+
+
+    <!-- Get Quote: Always visible -->
+    <a 
+    href="pages/quote.html"
+    class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
+        Get Quote
+    </a>
+
+</div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t py-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                    <a href="private-label.html">Private Labels</a>
+                    <a href="oem-odm.html">OEM/ODM</a>
+                    <a href="factory.html">Factory</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a> 
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
+
+        button.onclick = () => {
+            menu.classList.toggle('hidden');
+            button.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+        };
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[#FAF8F3] min-h-[560px] px-6 lg:px-12">
+
+  <div class="max-w-[1440px] mx-auto min-h-[560px] grid grid-cols-1 lg:grid-cols-[36%_64%] items-center">
+
+    <!-- LEFT -->
+    <div class="h-full flex flex-col justify-between py-10 lg:py-12">
+
+      <!-- Heading -->
+      <div>
+        <div class="flex items-center gap-4 mb-4">
+          <p class="text-[10px] tracking-[0.14em] uppercase text-[#C88A00]">
+            Milestones
+          </p>
+          <span class="w-8 h-px bg-[#C88A00]"></span>
+        </div>
+
+        <h2 class="font-['Cormorant_Garamond'] text-[38px] sm:text-[42px] lg:text-[42px] leading-[0.95] text-[#292929]">
+          How we <span class="italic text-[#C88A00]">got here</span>
+        </h2>
+      </div>
+
+      <!-- Jaipur Image -->
+      <div class="relative w-full max-w-[500px] h-[280px] sm:h-[340px] lg:h-[410px] overflow-hidden">
+        <img
+          src="../images/home/jaipur.png"
+          alt="Jaipur"
+          class="w-full h-full object-cover"
+        >
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT TIMELINE -->
+    <div class="relative pl-8 lg:pl-10 py-10 lg:py-12">
+
+      <!-- Vertical Line -->
+      <div class="absolute left-[22px] top-[65px] bottom-[65px] w-px bg-[#C88A00]/30"></div>
+
+
+      <!-- 2011 -->
+      <div class="relative grid grid-cols-[60px_1fr] sm:grid-cols-[70px_1fr] items-center min-h-[85px]">
+
+        <div class="relative z-10 w-3 h-3 rounded-full bg-[#C88A00]/60"></div>
+
+        <div>
+          <span class="font-['Cormorant_Garamond'] text-[20px] text-[#C88A00]">
+            2011
+          </span>
+
+          <div class="mt-1 bg-white border border-[#E8E3D9] rounded-xl px-5 sm:px-6 py-4">
+            <h3 class="text-[13.4px] font-medium text-black">
+              Founded in Jaipur
+            </h3>
+
+            <p class="mt-1 text-[11px] sm:text-[12px] leading-[1.4] text-[#777]">
+              Teej India Textiles opens as a small women's apparel unit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2014 -->
+      <div class="relative grid grid-cols-[60px_1fr] sm:grid-cols-[70px_1fr] items-center min-h-[85px]">
+
+        <div class="relative z-10 w-3 h-3 rounded-full bg-[#C88A00]/60"></div>
+
+        <div>
+          <span class="font-['Cormorant_Garamond'] text-[20px] text-[#C88A00]">
+            2014
+          </span>
+
+          <div class="mt-1 bg-white border border-[#E8E3D9] rounded-xl px-5 sm:px-6 py-4">
+            <h3 class="text-[13.4px] font-medium text-black">
+              First export orders
+            </h3>
+
+            <p class="mt-1 text-[11px] sm:text-[12px] leading-[1.4] text-[#777]">
+              Began shipping private-label collections internationally.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2018 -->
+      <div class="relative grid grid-cols-[60px_1fr] sm:grid-cols-[70px_1fr] items-center min-h-[85px]">
+
+        <div class="relative z-10 w-3 h-3 rounded-full bg-[#C88A00]/60"></div>
+
+        <div>
+          <span class="font-['Cormorant_Garamond'] text-[20px] text-[#C88A00]">
+            2018
+          </span>
+
+          <div class="mt-1 bg-white border border-[#E8E3D9] rounded-xl px-5 sm:px-6 py-4">
+            <h3 class="text-[13.4px] font-medium text-black">
+              In-house design studio
+            </h3>
+
+            <p class="mt-1 text-[11px] sm:text-[12px] leading-[1.4] text-[#777]">
+              Added dedicated design and sampling capabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2021 -->
+      <div class="relative grid grid-cols-[60px_1fr] sm:grid-cols-[70px_1fr] items-center min-h-[85px]">
+
+        <div class="relative z-10 w-3 h-3 rounded-full bg-[#C88A00]/60"></div>
+
+        <div>
+          <span class="font-['Cormorant_Garamond'] text-[20px] text-[#C88A00]">
+            2021
+          </span>
+
+          <div class="mt-1 bg-white border border-[#E8E3D9] rounded-xl px-5 sm:px-6 py-4">
+            <h3 class="text-[13.4px] font-medium text-black">
+              Capacity expansion
+            </h3>
+
+            <p class="mt-1 text-[11px] sm:text-[12px] leading-[1.4] text-[#777]">
+              Scaled production capacity with expanded facilities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2024 -->
+      <div class="relative grid grid-cols-[60px_1fr] sm:grid-cols-[70px_1fr] items-center min-h-[85px]">
+
+        <div class="relative z-10 w-3 h-3 rounded-full bg-[#C88A00]/60"></div>
+
+        <div>
+          <span class="font-['Cormorant_Garamond'] text-[20px] text-[#C88A00]">
+            2024
+          </span>
+
+          <div class="mt-1 bg-white border border-[#E8E3D9] rounded-xl px-5 sm:px-6 py-4">
+            <h3 class="text-[13.4px] font-medium text-black">
+              10+ export markets
+            </h3>
+
+            <p class="mt-1 text-[11px] sm:text-[12px] leading-[1.4] text-[#777]">
+              Serving brands across multiple international markets.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[#FAF8F3] py-12 sm:py-14 lg:py-16 px-5 sm:px-6 lg:px-12">
+
+  <div class="max-w-[1400px] mx-auto">
+
+    <!-- HEADER -->
+    <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-5 mb-10 sm:mb-12 lg:mb-14">
+
+      <!-- Heading -->
+      <div>
+        <div class="flex items-center gap-4 mb-3">
+          <p class="text-[10px] tracking-[0.14em] uppercase text-[#C88A00]">
+            The Founders
+          </p>
+
+          <span class="w-8 h-px bg-[#C88A00]"></span>
+        </div>
+
+        <h2 class="font-['Cormorant_Garamond']
+                   text-[36px] sm:text-[42px] lg:text-[46px]
+                   leading-[0.95]
+                   text-[#292929]">
+
+          Three perspectives.<br>
+
+          <span class="italic text-[#C88A00]">
+            One vision.
+          </span>
+
+        </h2>
+      </div>
+
+
+      <!-- Intro -->
+      <p class="hidden sm:block font-['DM_Sans']
+                text-[11px] sm:text-[12px]
+                leading-[1.55]
+                text-[#666]
+                max-w-[330px]
+                lg:pt-5">
+
+        From manufacturing and international business to consumer brands,
+        Teej is shaped by three distinct perspectives working toward one
+        shared vision.
+
+      </p>
+
+    </div>
+
+
+    <!-- FOUNDERS CHAIN -->
+    <div class="relative">
+
+      <!-- CENTER LINE -->
+      <div class="absolute left-1/2 top-4 bottom-4
+                  w-px bg-[#C88A00]/35
+                  -translate-x-1/2">
+      </div>
+
+
+      <!-- SHIV -->
+      <div class="relative grid grid-cols-[1fr_32px_1fr]
+                  lg:grid-cols-[1fr_140px_1fr]
+                  items-center
+                  min-h-[180px] lg:min-h-[225px]
+                  mb-10 lg:mb-14">
+
+        <!-- IMAGE -->
+        <div class="justify-self-end pr-3 sm:pr-5 lg:pr-14">
+
+          <div class="w-[125px] h-[125px]
+                      sm:w-[155px] sm:h-[155px]
+                      lg:w-[225px] lg:h-[225px]
+                      rounded-full overflow-hidden
+                      border border-[#C88A00]/20">
+
+            <img
+              src="../images/home/shiv-saini.jpg"
+              alt="Shiv Saini"
+              class="w-full h-full object-cover object-top"
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- CENTER -->
+        <div class="relative z-10 flex justify-center">
+
+          <div class="w-8 h-8 sm:w-10 sm:h-10
+                      rounded-full bg-[#C88A00]
+                      border-4 border-[#FAF8F3]
+                      flex items-center justify-center">
+
+            <span class="text-[8px] sm:text-[10px] text-white">
+              01
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="pl-3 sm:pl-5 lg:pl-14">
+
+          <h3 class="font-['Cormorant_Garamond']
+                     text-[20px] sm:text-[23px] lg:text-[25px]
+                     text-[#292929]">
+
+            Shiv Saini
+
+          </h3>
+
+          <p class="mt-1 text-[7px] sm:text-[9px] lg:text-[10px]
+                    tracking-[0.14em] uppercase
+                    text-[#C88A00]">
+
+            Founder & Managing Director
+
+          </p>
+
+          <p class="mt-2 sm:mt-3
+                    text-[9px] sm:text-[11px] lg:text-[12px]
+                    leading-[1.5]
+                    text-[#666]
+                    max-w-[380px]
+                    tracking-wide">
+
+            A visionary with decades in the textile and trade sector,
+            building Teej Group's foundational pillars from Jaipur's
+            rich commercial heritage.
+
+          </p>
+
+          <p class="mt-2 sm:mt-3
+                    font-['Cormorant_Garamond']
+                    italic text-[11px] sm:text-[13px] lg:text-[14px]
+                    leading-[1.2] text-[#777]">
+
+            “Built on relationships.<br>
+            Driven by possibilities.”
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- SATYA -->
+      <div class="relative grid grid-cols-[1fr_32px_1fr]
+                  lg:grid-cols-[1fr_140px_1fr]
+                  items-center
+                  min-h-[180px] lg:min-h-[225px]
+                  mb-10 lg:mb-14">
+
+        <!-- CONTENT -->
+        <div class="pr-3 sm:pr-5 lg:pr-14 text-right">
+
+          <h3 class="font-['Cormorant_Garamond']
+                     text-[20px] sm:text-[23px] lg:text-[25px]
+                     text-[#292929]">
+
+            Satya Saini
+
+          </h3>
+
+          <p class="mt-1 text-[7px] sm:text-[9px] lg:text-[10px]
+                    tracking-[0.14em] uppercase
+                    text-[#C88A00]">
+
+            Founder & Director,<br>
+            Gold & International Businesses
+
+          </p>
+
+          <p class="mt-2 sm:mt-3
+                    text-[9px] sm:text-[11px] lg:text-[12px]
+                    leading-[1.5]
+                    text-[#666]
+                    max-w-[380px]
+                    ml-auto
+                    tracking-wide">
+
+            Driving the group's global expansion — from gold trade
+            corridors in Dubai to export operations spanning three
+            continents.
+
+          </p>
+
+          <p class="mt-2 sm:mt-3
+                    font-['Cormorant_Garamond']
+                    italic text-[11px] sm:text-[13px] lg:text-[14px]
+                    leading-[1.2] text-[#777]">
+
+            “Connecting markets.<br>
+            Creating opportunities.”
+
+          </p>
+
+        </div>
+
+
+        <!-- CENTER -->
+        <div class="relative z-10 flex justify-center">
+
+          <div class="w-8 h-8 sm:w-10 sm:h-10
+                      rounded-full bg-[#C88A00]
+                      border-4 border-[#FAF8F3]
+                      flex items-center justify-center">
+
+            <span class="text-[8px] sm:text-[10px] text-white">
+              02
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- IMAGE -->
+        <div class="pl-3 sm:pl-5 lg:pl-14">
+
+          <div class="w-[125px] h-[125px]
+                      sm:w-[155px] sm:h-[155px]
+                      lg:w-[225px] lg:h-[225px]
+                      rounded-full overflow-hidden
+                      border border-[#C88A00]/20">
+
+            <img
+              src="../images/home/satya-saini.jpg"
+              alt="Satya Saini"
+              class="w-full h-full object-cover object-top"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ANKUSH -->
+      <div class="relative grid grid-cols-[1fr_32px_1fr]
+                  lg:grid-cols-[1fr_140px_1fr]
+                  items-center
+                  min-h-[180px] lg:min-h-[225px]">
+
+        <!-- IMAGE -->
+        <div class="justify-self-end pr-3 sm:pr-5 lg:pr-14">
+
+          <div class="w-[125px] h-[125px]
+                      sm:w-[155px] sm:h-[155px]
+                      lg:w-[225px] lg:h-[225px]
+                      rounded-full overflow-hidden
+                      border border-[#C88A00]/20">
+
+            <img
+              src="../images/home/ankush-saini.jpg"
+              alt="Ankush Saini"
+              class="w-full h-full object-cover object-top"
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- CENTER -->
+        <div class="relative z-10 flex justify-center">
+
+          <div class="w-8 h-8 sm:w-10 sm:h-10
+                      rounded-full bg-[#C88A00]
+                      border-4 border-[#FAF8F3]
+                      flex items-center justify-center">
+
+            <span class="text-[8px] sm:text-[10px] text-white">
+              03
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="pl-3 sm:pl-5 lg:pl-14">
+
+          <h3 class="font-['Cormorant_Garamond']
+                     text-[20px] sm:text-[23px] lg:text-[25px]
+                     text-[#292929]">
+
+            Ankush Saini
+
+          </h3>
+
+          <p class="mt-1 text-[7px] sm:text-[9px] lg:text-[10px]
+                    tracking-[0.14em] uppercase
+                    text-[#C88A00]">
+
+            Founder, Brand & Consumer
+
+          </p>
+
+          <p class="mt-2 sm:mt-3
+                    text-[9px] sm:text-[11px] lg:text-[12px]
+                    leading-[1.5]
+                    text-[#666]
+                    max-w-[380px]
+                    tracking-wide">
+
+            The creative force behind Streeshu and Stonerclub,
+            shaping the group's consumer brand identity across
+            fashion and wellness.
+
+          </p>
+
+          <p class="mt-2 sm:mt-3
+                    font-['Cormorant_Garamond']
+                    italic text-[11px] sm:text-[13px] lg:text-[14px]
+                    leading-[1.2] text-[#777]">
+
+            “Ideas into brands.<br>
+            Clothing a brighter tomorrow.”
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[#FAF8F3] py-12 sm:py-14 lg:py-16 px-5 sm:px-6 lg:px-12">
+
+  <div class="max-w-[1400px] mx-auto">
+
+    <!-- HEADING -->
+    <div class="text-center mb-8 lg:mb-10">
+
+      <p class="font-['DM_Sans'] text-[9px] sm:text-[10px]
+                tracking-[0.18em] uppercase text-[#C88A00] mb-3">
+        What we stand for
+      </p>
+
+      <h2 class="font-['Cormorant_Garamond']
+                 text-[30px] sm:text-[38px] lg:text-[42px]
+                 leading-none text-[#292929]">
+
+        Three things we
+        <span class="italic text-[#C88A00]">
+          don't compromise on
+        </span>
+
+      </h2>
+
+    </div>
+
+
+    <!-- CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-5">
+
+
+      <!-- CARD 01 -->
+      <div class="bg-white border border-[#E8E3D9] rounded-xl
+                  h-auto min-h-[245px] lg:h-[220px]
+                  p-6 lg:p-7
+                  flex gap-6">
+
+        <!-- ICON -->
+        <div class="shrink-0
+                    w-14 h-14 lg:w-16 lg:h-16
+                    rounded-full bg-[#C88A00]
+                    flex items-center justify-center">
+
+          <i data-lucide="users"
+             class="w-7 h-7 text-white stroke-[1.4]">
+          </i>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div>
+
+          <p class="font-['DM_Sans'] text-[12px] text-[#C88A00] mb-2">
+            01
+          </p>
+
+          <h3 class="font-['Cormorant_Garamond']
+                     text-[23px] lg:text-[26px]
+                     leading-[1.05] text-[#292929]">
+
+            Low minimums,<br>
+            real support
+
+          </h3>
+
+          <p class="font-['DM_Sans']
+                    mt-4
+                    text-[12px] lg:text-[14px]
+                    leading-[1.55]
+                    text-[#666]">
+
+            We built the factory around emerging brands –
+            100-piece minimums with the same design and
+            quality attention a large order gets.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 02 -->
+      <div class="bg-white border border-[#E8E3D9] rounded-xl
+                  h-auto min-h-[245px] lg:h-[220px]
+                  p-6 lg:p-7
+                  flex gap-6">
+
+        <!-- ICON -->
+        <div class="shrink-0
+                    w-14 h-14 lg:w-16 lg:h-16
+                    rounded-full bg-[#C88A00]
+                    flex items-center justify-center">
+
+          <i data-lucide="badge-check"
+             class="w-7 h-7 text-white stroke-[1.4]">
+          </i>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div>
+
+          <p class="font-['DM_Sans'] text-[12px] text-[#C88A00] mb-2">
+            02
+          </p>
+
+          <h3 class="font-['Cormorant_Garamond']
+                     text-[23px] lg:text-[26px]
+                     leading-[1.05] text-[#292929]">
+
+            Quality over volume
+
+          </h3>
+
+          <p class="font-['DM_Sans']
+                    mt-4
+                    text-[12px] lg:text-[14px]
+                    leading-[1.55]
+                    text-[#666]">
+
+            Add 75 inspection at every stage. We would rather
+            hold a shipment than send a garment we would not
+            put our own name on.
+
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- CARD 03 -->
+      <div class="bg-white border border-[#E8E3D9] rounded-xl
+                  h-auto min-h-[245px] lg:h-[220px]
+                  p-6 lg:p-7
+                  flex gap-6">
+
+        <!-- ICON -->
+        <div class="shrink-0
+                    w-14 h-14 lg:w-16 lg:h-16
+                    rounded-full bg-[#C88A00]
+                    flex items-center justify-center">
+
+          <i data-lucide="award"
+             class="w-7 h-7 text-white stroke-[1.4]">
+          </i>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div>
+
+          <p class="font-['DM_Sans'] text-[12px] text-[#C88A00] mb-2">
+            03
+          </p>
+
+          <h3 class="font-['Cormorant_Garamond']
+                     text-[23px] lg:text-[26px]
+                     leading-[1.05] text-[#292929]">
+
+            One accountable partner
+
+          </h3>
+
+          <p class="font-['DM_Sans']
+                    mt-4
+                    text-[12px] lg:text-[14px]
+                    leading-[1.55]
+                    text-[#666]">
+
+            Design, sampling, fabric, production and export
+            all under one roof, so nothing gets lost between
+            suppliers.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<section
+  class="relative overflow-hidden bg-[#FAF8F3] bg-[url('../images/about/story-bg.png')]
+         bg-no-repeat bg-cover bg-center
+         min-h-[560px] sm:min-h-[600px] lg:min-h-[620px]
+         px-6 sm:px-8 lg:px-12"
+>
+
+  <!-- Content -->
+  <div class="relative z-10 max-w-[1200px] mx-auto min-h-[560px] sm:min-h-[600px] lg:min-h-[620px]
+              grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr]
+              items-center gap-10 lg:gap-16 py-14 sm:py-16 lg:py-20">
+
+
+    <!-- LEFT : STORY -->
+    <div class="max-w-[650px]">
+
+      <!-- Eyebrow -->
+      <div class="flex items-center gap-4 mb-5">
+        <p class="text-[9px] sm:text-[10px] tracking-[0.16em] uppercase text-[#C88A00]">
+          Our Story
+        </p>
+
+        <span class="w-8 h-px bg-[#C88A00]"></span>
+      </div>
+
+
+      <!-- Heading -->
+      <h2 class="font-['Cormorant_Garamond']
+                 text-[38px] sm:text-[46px] lg:text-[56px]
+                 leading-[0.95]
+                 text-[#292929]">
+
+        Built for the brands<br>
+
+        <span class="italic text-[#C88A00]">
+          we wished existed.
+        </span>
+
+      </h2>
+
+
+      <!-- Story -->
+      <div class="mt-7 sm:mt-8 space-y-4 max-w-[590px]">
+
+        <p class="font-['DM_Sans']
+                  text-[11px] sm:text-[12px]
+                  leading-[1.65]
+                  text-[#666666]">
+
+          Teej India Textiles began in 2011 in Jaipur with a simple belief —
+          manufacturing should feel less complicated for the brands behind
+          every collection.
+
+        </p>
+
+        <p class="font-['DM_Sans']
+                  text-[11px] sm:text-[12px]
+                  leading-[1.65]
+                  text-[#666666]">
+
+          What started as a small apparel operation has grown into a trusted
+          manufacturing partner for brands across the world, built on
+          craftsmanship, long-term relationships and a commitment to getting
+          the details right.
+
+        </p>
+
+        <p class="font-['DM_Sans']
+                  text-[11px] sm:text-[12px]
+                  leading-[1.65]
+                  text-[#666666]">
+
+          Today, we bring together design development, sourcing, sampling,
+          production and export under one roof, helping brands of all sizes
+          create clothing that people love to wear.
+
+        </p>
+
+      </div>
+
+
+      <!-- Button -->
+      <a
+        href="#"
+        class="inline-flex items-center gap-3 mt-7
+               border border-[#C88A00]
+               px-6 py-3
+               text-[10px] tracking-[0.14em] uppercase
+               text-[#292929]
+               hover:bg-[#C88A00] hover:text-white
+               transition"
+      >
+        Our Story
+        <span class="text-[#C88A00]">→</span>
+      </a>
+
+    </div>
+
+
+    <!-- RIGHT : HERITAGE -->
+    <div class="relative flex flex-col items-center lg:items-center
+                text-center lg:text-center">
+
+      <!-- Year -->
+      <div class="font-['Cormorant_Garamond']
+                  text-[110px] sm:text-[135px] lg:text-[160px]
+                  leading-none
+                  text-[#C88A00]/[0.10]">
+
+        2011
+
+      </div>
+
+
+      <!-- Gold line -->
+      <span class="w-12 h-px bg-[#C88A00] -mt-4 sm:-mt-5"></span>
+
+
+      <!-- Statement -->
+      <div class="mt-7">
+
+        <p class="font-['DM_Sans']
+                  text-[9px] tracking-[0.28em]
+                  uppercase text-[#292929]">
+          Rooted in
+        </p>
+
+        <h3 class="font-['Cormorant_Garamond']
+                   text-[38px] sm:text-[44px] lg:text-[50px]
+                   leading-none
+                   text-[#C88A00]">
+          Jaipur.
+        </h3>
+
+        <p class="mt-5 font-['DM_Sans']
+                  text-[9px] tracking-[0.28em]
+                  uppercase text-[#292929]">
+          Made for a
+        </p>
+
+        <h3 class="font-['Cormorant_Garamond']
+                   text-[28px] sm:text-[32px] lg:text-[36px]
+                   leading-none
+                   text-[#C88A00]">
+          Global Tomorrow.
+        </h3>
+
+      </div>
+
+
+      <!-- Location -->
+      <div class="mt-7 flex flex-col items-center">
+
+        <span class="w-px h-7 bg-[#C88A00]"></span>
+
+        <span class="w-2.5 h-2.5 rounded-full bg-[#C88A00] -mt-5"></span>
+
+        <p class="mt-4 text-[9px] tracking-[0.25em] uppercase text-[#666666]">
+          Jaipur, India
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="bg-[#121210] text-gray-400 px-6 py-12">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+
+      <!-- Brand -->
+      <div>
+        <h2 class="font-serif text-2xl tracking-[0.2em] text-white">
+          TEEJ India Textiles
+        </h2>
+
+        <p class="text-sm leading-6 mt-5 max-w-xs">
+          Women's apparel manufacturer and exporter from Jaipur, India.
+          Est. 2011.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mt-7">
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            IEC CERTIFIED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            GST REGISTERED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            EST. 2011
+          </span>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">PRODUCTS</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#">Dresses</a>
+          <a href="#">Co-ord Sets</a>
+          <a href="#" class="block text-white">Resort Wear</a>
+          <a href="#">Kaftans</a>
+          <a href="#">Plus Size</a>
+          <a href="#" class="block">View all →</a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">SERVICES</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">Private Label</a>
+          <a href="#" class="block">OEM / ODM</a>
+          <a href="#" class="block">Sampling</a>
+          <a href="#" class="block">Custom Manufacturing</a>
+          <a href="#" class="block">Quality Control</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">COMPANY</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">About Us</a>
+          <a href="#" class="block">Factory</a>
+          <a href="#" class="block">Export Markets</a>
+          <a href="#" class="block">Blog</a>
+          <a href="#" class="block">Contact</a>
+          <a href="#" class="block text-amber-400">Get Quote →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-12 pt-7 flex flex-col
+                md:flex-row justify-between gap-4 text-xs">
+
+      <p>
+        © 2025 Teej India Textiles. All rights reserved.
+        Jaipur, Rajasthan, India.
+      </p>
+
+      <div class="flex gap-6">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+    </body>
+    </html>

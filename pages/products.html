@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teej India Textiles</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C88A00',
+                        dark: '#292929'
+                    },
+                    fontFamily: {
+                     serif: ['Cormorant Garamond', 'serif'],
+                      sans: ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-dark">
+
+    <!-- Navbar -->
+    <nav class="border-b">
+
+        <div class="relative max-w-7xl mx-auto px-2">
+
+            <!-- Navbar Row -->
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Hamburger -->
+                <button id="menuButton" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html"
+                   class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-2xl md:text-4xl">Teej</h1>
+                        <p class="text-[10x] tracking-widest text-amber-500">
+                            India Textiles
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex gap-8 items-center justify-center">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                   <a href="private-label.html">Private Labels</a>
+                   <a href="oem-odm.html">OEM/ODM</a>
+                   <a href="factory.html">Factory</a>
+                   <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Request Catalog: Desktop only -->
+    <a 
+    href="pages/catalog.html"
+    class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
+        Request Catalog
+    </a>
+
+
+    <!-- Get Quote: Always visible -->
+    <a 
+    href="pages/quote.html"
+    class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
+        Get Quote
+    </a>
+
+</div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t py-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                    <a href="private-label.html">Private Labels</a>
+                    <a href="oem-odm.html">OEM/ODM</a>
+                    <a href="factory.html">Factory</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a> 
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
+
+        button.onclick = () => {
+            menu.classList.toggle('hidden');
+            button.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+        };
+    </script>
+
+
+
+<!-- DRESSES HERO -->
+<section class="relative w-full h-[540px] sm:h-[600px] lg:h-[520px]
+                bg-[#FAF8F3]
+                bg-[url('../images/products/pro-background.png')]
+                bg-right bg-no-repeat bg-[length:auto_100%]
+                overflow-hidden">
+
+  <!-- LEFT CONTENT -->
+  <div class="relative z-10 flex flex-col
+              px-8 sm:px-10 lg:px-[70px]
+              pt-12 sm:pt-16 lg:pt-16
+              w-full lg:w-[55%]">
+
+    <!-- Breadcrumb -->
+    <p class="text-[8px] text-gray-400 mb-8">
+      Home &nbsp;›&nbsp; Products &nbsp;›&nbsp;
+      <span class="text-gray-700">Dresses</span>
+    </p>
+
+    <!-- Label -->
+    <p class="text-[12px] tracking-[0.12em] font-semibold
+              text-amber-500 mb-5">
+      DRESSES MANUFACTURING
+    </p>
+
+    <!-- Heading -->
+   <h1 class="font-['Cormorant_Garamond'] text-[40px] sm:text-[48px] lg:text-[54px] text-[#292929] leading-none">
+  <span>Women’s Dresses</span><br>
+  <span class="italic text-[#C88A00]">Manufactured in India</span>
+</h1>
+    <!-- Description -->
+    <p class="mt-6 max-w-[440px]
+              text-[11px] lg:text-[14px]
+              leading-[1.5] text-[#555]">
+      Maxi, midi, wrap, shirt and slip dresses crafted to your
+      specifications with low minimums and export-ready quality.
+    </p>
+
+  </div>
+
+
+  <!-- SPECIFICATION BAR -->
+  <div class="absolute z-20 bottom-0 left-0
+              w-full lg:w-[65%]
+              h-[120px] sm:h-[125px] lg:h-[105px]
+              bg-[#FAF8F3]/95
+              border border-[#E4DED3]
+              rounded-t-[10px]">
+
+    <div class="h-full grid grid-cols-2 sm:grid-cols-4">
+
+      <!-- 01 -->
+      <div class="flex flex-row items-center gap-3
+                  px-5 lg:px-7
+                  border-r border-[#DDD7CC]">
+
+        <i data-lucide="package"
+           class="w-7 h-7 shrink-0 text-[#C88A00]"></i>
+
+        <div class="flex flex-col gap-1">
+          <p class="text-[10px] tracking-[0.08em] uppercase text-[#777]">
+            Minimum Order
+          </p>
+          <p class="text-[13px] font-semibold text-[#292929]">
+            100 PCS / STYLE
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- 02 -->
+      <div class="flex flex-row items-center gap-3
+                  px-5 lg:px-7
+                  border-r sm:border-r border-[#DDD7CC]">
+
+        <i data-lucide="pen-ruler"
+           class="w-7 h-7 shrink-0 text-[#C88A00]"></i>
+
+        <div class="flex flex-col gap-1">
+          <p class="text-[10px] tracking-[0.08em] uppercase text-[#777]">
+            Sample Time
+          </p>
+          <p class="text-[13px] font-semibold text-[#292929]">
+            7–10 DAYS
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- 03 -->
+      <div class="flex flex-row items-center gap-3
+                  px-5 lg:px-7
+                  border-r border-[#DDD7CC]">
+
+        <i data-lucide="calendar-days"
+           class="w-7 h-7 shrink-0 text-[#C88A00]"></i>
+
+        <div class="flex flex-col gap-1">
+          <p class="text-[10px] tracking-[0.08em] uppercase text-[#777]">
+            Bulk Lead Time
+          </p>
+          <p class="text-[13px] font-semibold text-[#292929]">
+            8–10 WEEKS
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- 04 -->
+      <div class="flex flex-row items-center gap-3
+                  px-5 lg:px-7">
+
+        <i data-lucide="shirt"
+           class="w-7 h-7 shrink-0 text-[#C88A00]"></i>
+
+        <div class="flex flex-col gap-1">
+          <p class="text-[10px] tracking-[0.08em] uppercase text-[#777]">
+            Size Range
+          </p>
+          <p class="text-[13px] font-semibold text-[#292929]">
+            XS – 5XL
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BROWSE BY CATEGORY -->
+<section class="w-full bg-white py-12 sm:py-14 lg:py-16">
+
+  <div class="ml-5 sm:ml-8 lg:ml-[50px] mr-0 pr-5 sm:pr-8 lg:pr-[50px]">
+
+    <!-- Heading -->
+    <div class="mb-8 sm:mb-10">
+      <div class="flex items-center gap-3 mb-2">
+        <p class="text-[8px] tracking-[0.18em] uppercase text-[#C88A00]">
+          Product Categories
+        </p>
+        <span class="w-10 h-px bg-[#C88A00]"></span>
+      </div>
+
+      <h2 class="font-['Cormorant_Garamond'] text-[32px] sm:text-[38px]
+                 text-[#292929] leading-none">
+        Browse by <span class="italic text-[#999]">category</span>
+      </h2>
+
+      <p class="mt-3 max-w-[520px] text-[10px] sm:text-[11px]
+                leading-[1.6] text-[#888]">
+        Explore our product categories and discover styles available
+        for bulk manufacturing and private label.
+      </p>
+    </div>
+
+
+    <!-- 6 CATEGORY CARDS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
+
+
+      <!-- DRESSES -->
+      <a href="categories/dresses.html"
+         class="group border border-[#E2DED6] rounded-[8px] overflow-hidden">
+
+        <div class="relative h-[230px] sm:h-[250px] lg:h-[280px]
+                    bg-[#F3F0EA]">
+
+          <img src="../images/home/dress.jpg"
+               class="w-full h-full object-cover object-top
+                      group-hover:scale-[1.02] transition duration-500">
+
+          <span class="absolute top-3 left-3 bg-white/90
+                       px-2 py-1 text-[7px] tracking-wider
+                       text-[#C88A00]">
+            AVAILABLE
+          </span>
+
+        </div>
+
+        <div class="p-4 sm:p-5">
+          <p class="text-[7px] tracking-[0.15em] uppercase text-[#999]">
+            CATEGORY 01
+          </p>
+
+          <h3 class="mt-2 font-['Cormorant_Garamond']
+                     text-[24px] text-[#292929]">
+            Dresses
+          </h3>
+
+          <p class="mt-2 text-[9px] leading-[1.5] text-[#888]">
+            Maxi, midi, wrap, shirt and slip dresses.
+          </p>
+
+          <div class="mt-4 pt-3 border-t border-[#E5E0D8]
+                      flex justify-between items-center">
+            <span class="text-[7px] tracking-wider text-[#888]">
+              MOQ 100 PCS
+            </span>
+            <span class="text-[12px] font-[DM_Sans] font-medium text-amber-500">
+              VIEW CATEGORY →
+            </span>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- KAFTANS -->
+      <a href="categories/kaftan.html"
+         class="group border border-[#E2DED6] rounded-[8px] overflow-hidden">
+
+        <div class="relative h-[230px] sm:h-[250px] lg:h-[260px]
+                    bg-[#F3F0EA]">
+
+          <img src="../images/products/categories/kaftans.jpg"
+               class="w-full h-full object-cover
+                      group-hover:scale-[1.02] transition duration-500">
+        </div>
+
+        <div class="p-4 sm:p-5">
+          <p class="text-[7px] tracking-[0.15em] uppercase text-[#999]">
+            CATEGORY 02
+          </p>
+
+          <h3 class="mt-2 font-['Cormorant_Garamond']
+                     text-[24px] text-[#292929]">
+            Kaftans
+          </h3>
+
+          <p class="mt-2 text-[9px] leading-[1.5] text-[#888]">
+            Relaxed silhouettes for resort and lifestyle collections.
+          </p>
+
+          <div class="mt-4 pt-3 border-t border-[#E5E0D8]
+                      flex justify-between items-center">
+            <span class="text-[7px] tracking-wider text-[#888]">
+              MOQ 100 PCS
+            </span>
+            <span class="text-[8px] text-[#C88A00]">
+              VIEW CATEGORY →
+            </span>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- TOPS & TUNICS -->
+      <a href="categories/tops-tunics.html"
+         class="group border border-[#E2DED6] rounded-[8px] overflow-hidden">
+
+        <div class="relative h-[230px] sm:h-[250px] lg:h-[260px]
+                    bg-[#F3F0EA]">
+
+          <img src="../images/products/categories/tops-tunics.jpg"
+               class="w-full h-full object-cover
+                      group-hover:scale-[1.02] transition duration-500">
+        </div>
+
+        <div class="p-4 sm:p-5">
+          <p class="text-[7px] tracking-[0.15em] uppercase text-[#999]">
+            CATEGORY 03
+          </p>
+
+          <h3 class="mt-2 font-['Cormorant_Garamond']
+                     text-[24px] text-[#292929]">
+            Tops & Tunics
+          </h3>
+
+          <p class="mt-2 text-[9px] leading-[1.5] text-[#888]">
+            Contemporary silhouettes for everyday and fashion ranges.
+          </p>
+
+          <div class="mt-4 pt-3 border-t border-[#E5E0D8]
+                      flex justify-between items-center">
+            <span class="text-[7px] tracking-wider text-[#888]">
+              MOQ 100 PCS
+            </span>
+            <span class="text-[8px] text-[#C88A00]">
+              VIEW CATEGORY →
+            </span>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- RESORT WEAR -->
+      <a href="categories/resort-wear.html"
+         class="group border border-[#E2DED6] rounded-[8px] overflow-hidden">
+
+        <div class="relative h-[230px] sm:h-[250px] lg:h-[260px]
+                    bg-[#F3F0EA]">
+
+          <img src="../images/products/categories/resort-wear.jpg"
+               class="w-full h-full object-cover
+                      group-hover:scale-[1.02] transition duration-500">
+        </div>
+
+        <div class="p-4 sm:p-5">
+          <p class="text-[7px] tracking-[0.15em] uppercase text-[#999]">
+            CATEGORY 04
+          </p>
+
+          <h3 class="mt-2 font-['Cormorant_Garamond']
+                     text-[24px] text-[#292929]">
+            Resort Wear
+          </h3>
+
+          <p class="mt-2 text-[9px] leading-[1.5] text-[#888]">
+            Breezy silhouettes, cover-ups and warm-weather styles.
+          </p>
+
+          <div class="mt-4 pt-3 border-t border-[#E5E0D8]
+                      flex justify-between items-center">
+            <span class="text-[7px] tracking-wider text-[#888]">
+              MOQ 100 PCS
+            </span>
+            <span class="text-[8px] text-[#C88A00]">
+              VIEW CATEGORY →
+            </span>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- LOUNGEWEAR -->
+      <a href="categories/loungewear-nightwear.html"
+         class="group border border-[#E2DED6] rounded-[8px] overflow-hidden">
+
+        <div class="relative h-[230px] sm:h-[250px] lg:h-[260px]
+                    bg-[#F3F0EA]">
+
+          <img src="../images/products/categories/loungewear.jpg"
+               class="w-full h-full object-cover
+                      group-hover:scale-[1.02] transition duration-500">
+        </div>
+
+        <div class="p-4 sm:p-5">
+          <p class="text-[7px] tracking-[0.15em] uppercase text-[#999]">
+            CATEGORY 05
+          </p>
+
+          <h3 class="mt-2 font-['Cormorant_Garamond']
+                     text-[24px] text-[#292929]">
+            Loungewear & Nightwear
+          </h3>
+
+          <p class="mt-2 text-[9px] leading-[1.5] text-[#888]">
+            Comfortable coordinated pieces for relaxed collections.
+          </p>
+
+          <div class="mt-4 pt-3 border-t border-[#E5E0D8]
+                      flex justify-between items-center">
+            <span class="text-[7px] tracking-wider text-[#888]">
+              MOQ 100 PCS
+            </span>
+            <span class="text-[8px] text-[#C88A00]">
+              VIEW CATEGORY →
+            </span>
+          </div>
+        </div>
+      </a>
+
+
+      <!-- CO-ORD SETS -->
+      <a href="categories/coord-sets.html"
+         class="group border border-[#E2DED6] rounded-[8px] overflow-hidden">
+
+        <div class="relative h-[230px] sm:h-[250px] lg:h-[260px]
+                    bg-[#F3F0EA]">
+
+          <img src="../images/products/categories/coord-sets.jpg"
+               class="w-full h-full object-cover
+                      group-hover:scale-[1.02] transition duration-500">
+        </div>
+
+        <div class="p-4 sm:p-5">
+          <p class="text-[7px] tracking-[0.15em] uppercase text-[#999]">
+            CATEGORY 06
+          </p>
+
+          <h3 class="mt-2 font-['Cormorant_Garamond']
+                     text-[24px] text-[#292929]">
+            Co-ord Sets
+          </h3>
+
+          <p class="mt-2 text-[9px] leading-[1.5] text-[#888]">
+            Matching two-piece sets with relaxed, tailored silhouettes.
+          </p>
+
+          <div class="mt-4 pt-3 border-t border-[#E5E0D8]
+                      flex justify-between items-center">
+            <span class="text-[7px] tracking-wider text-[#888]">
+              MOQ 100 PCS
+            </span>
+            <span class="text-[8px] text-[#C88A00]">
+              VIEW CATEGORY →
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- DRESSES HERO -->
+
+<script>
+  lucide.createIcons();
+</script>
+    </body>
+    </html>

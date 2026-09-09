@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teej India Textiles</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C88A00',
+                        dark: '#292929'
+                    },
+                    fontFamily: {
+                     serif: ['Cormorant Garamond', 'serif'],
+                      sans: ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-dark">
+
+    <!-- Navbar -->
+    <nav class="border-b">
+
+        <div class="relative max-w-7xl mx-auto px-2">
+
+            <!-- Navbar Row -->
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Hamburger -->
+                <button id="menuButton" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html"
+                   class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-2xl md:text-4xl">Teej</h1>
+                        <p class="text-[10x] tracking-widest text-amber-500">
+                            India Textiles
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex gap-8 items-center justify-center">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                   <a href="private-label.html">Private Labels</a>
+                   <a href="oem-odm.html">OEM/ODM</a>
+                   <a href="factory.html">Factory</a>
+                   <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Request Catalog: Desktop only -->
+    <a 
+    href="pages/catalog.html"
+    class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
+        Request Catalog
+    </a>
+
+
+    <!-- Get Quote: Always visible -->
+    <a 
+    href="pages/quote.html"
+    class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
+        Get Quote
+    </a>
+
+</div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t py-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                    <a href="private-label.html">Private Labels</a>
+                    <a href="oem-odm.html">OEM/ODM</a>
+                    <a href="factory.html">Factory</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a> 
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
+
+        button.onclick = () => {
+            menu.classList.toggle('hidden');
+            button.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+        };
+    </script>
+
+
+
+
+
+<!-- =========================
+     OEM / ODM PAGE
+========================= -->
+
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-4 bg-orange-50/30 min-h-[550px] w-full justify-center px-6">
+
+    <!-- LEFT CONTENT -->
+    <div class="flex flex-col gap-10 px-6 lg:px-12 py-4 lg:py-10">
+
+        <p class="tracking-widest text-amber-600/70 font-medium text-sm">
+            OEM / ODM Apparel Manufacturing
+        </p>
+
+        <h1 class="font-['DM_Serif_Display'] font-normal tracking-wide text-2xl lg:text-5xl leading-7">
+            From Your Idea To A
+            <br>
+            <span class="italic">Production Ready</span>
+            <br>
+            <span class="text-amber-500">Collection</span>
+        </h1>
+
+        <p class="font-['Inter'] font-[400] text-[15px] leading-[1.55] text-[#555555] line-clamp-3">
+            From design development and sampling to bulk production, we turn your product ideas into export-ready collections.
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="flex flex-col lg:flex-row gap-4">
+
+            <a href="#"
+               class="px-6 lg:px-10 text-center font-medium py-2 lg:py-3 md:py-3 border bg-amber-500 text-white tracking-widest rounded-md text-xs font-semibold">
+                START A PROJECT
+            </a>
+
+            <a href="#"
+               class="px-6 lg:px-8 text-center text-black/70 font-medium py-2 lg:py-3 md:py-3 border tracking-widest rounded-md text-xs font-semibold">
+                TALK TO OUR TEAM
+            </a>
+
+        </div>
+
+
+        <!-- STATS -->
+        <div class="grid grid-cols-2 lg:flex lg:flex-row gap-6">
+
+            <!-- 400K -->
+            <div class="flex flex-col gap-0.5">
+
+                <h1 class="font-['DM_Serif_Display'] font-medium text-[27px] text-[#C88A00]">
+                    400K+
+                </h1>
+
+                <p class="text-grey-200 text-xs tracking-wide">
+                    GARMENTS / YEAR
+                </p>
+
+            </div>
+
+
+            <!-- DIVIDER -->
+            <div class="hidden lg:block h-16 border-l border-[#E5E1D8]"></div>
+
+
+            <!-- 15+ -->
+            <div class="flex flex-col gap-0.5">
+
+                <h1 class="font-['DM_Serif_Display'] font-normal text-[27px] text-[#C88A00]">
+                    15+
+                </h1>
+
+                <p class="font-[500] text-[10px] tracking-[0.8px] text-grey-500 uppercase">
+                    YEARS EXPORTING
+                </p>
+
+            </div>
+
+
+            <!-- DIVIDER -->
+            <div class="hidden lg:block h-16 border-l border-[#E5E1D8]"></div>
+
+
+            <!-- 10+ -->
+            <div class="flex flex-col gap-0.5">
+
+                <h1 class="font-['DM_Serif_Display'] font-normal text-[27px] text-[#C88A00]">
+                    10+
+                </h1>
+
+                <p class="font-[500] text-[10px] tracking-[0.8px] text-grey-500 uppercase">
+                    EXPORT MARKETS
+                </p>
+
+            </div>
+
+
+            <!-- DIVIDER -->
+            <div class="hidden lg:block h-16 border-l border-[#E5E1D8]"></div>
+
+
+            <!-- 100 -->
+            <div class="flex flex-col gap-0.5">
+
+                <h1 class="font-['DM_Serif_Display'] font-normal text-[27px] text-[#C88A00]">
+                    100
+                </h1>
+
+                <p class="font-[500] text-[10px] tracking-[0.8px] text-grey-500 uppercase">
+                    MOQ FROM 100 PIECES
+                </p>
+
+            </div>
+
+
+            <!-- DIVIDER -->
+            <div class="hidden lg:block h-16 border-l border-[#E5E1D8]"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RIGHT IMAGE -->
+    <div class="h-[300px] lg:h-auto bg-[url('../images/oem-odm/oem.png')] bg-no-repeat bg-center bg-contain">
+    </div>
+
+</section>
+
+
+
+
+<!--two sections-->
+<!-- =========================
+     OEM / ODM CHOICE
+========================= -->
+<!-- =========================
+     OEM / ODM CHOICE
+========================= -->
+
+<section class="py-10 lg:py-14">
+
+    <!-- SECTION HEADING -->
+    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5 px-6 lg:px-20 mb-8">
+
+        <div class="flex items-center gap-5">
+
+            <h1 class="font-['Cormorant_Garamond'] font-normal text-[28px] sm:text-[32px] lg:text-[34px] leading-[1.1] tracking-[-0.3px] text-[#292929]">
+                Two ways to build your collection
+            </h1>
+
+            <span class="hidden sm:block w-7 h-px bg-[#C88A00]"></span>
+
+        </div>
+
+        <p class="font-['Inter'] font-[400] text-[15px] leading-[1.45] text-[#666666] max-w-md">
+            Whether you have a ready design or just an idea,
+            we offer flexible manufacturing solutions.
+        </p>
+
+    </div>
+
+
+    <!-- OEM + ODM -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-6 lg:px-20">
+
+
+        <!-- ================= OEM ================= -->
+
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] grid grid-cols-1 sm:grid-cols-[40%_60%] min-h-[250px]">
+
+            <!-- IMAGE -->
+            <div
+                class="h-[250px] sm:h-auto bg-cover bg-center"
+                style="background-image:url('../images/oem-odm/oemm.png')">
+            </div>
+
+
+            <!-- CONTENT -->
+            <div class="px-5 py-5">
+
+                <!-- ICON + TITLE -->
+                <div class="flex items-center gap-5 mb-2">
+
+                    <div class="w-14 h-14 shrink-0 rounded-full border border-[#C88A00] flex items-center justify-center">
+
+                        <i data-lucide="tag"
+                           class="w-7 h-7 text-[#C88A00] stroke-[1.3]">
+                        </i>
+
+                    </div>
+
+                    <h3 class="font-['Inter'] font-[600] text-[16px] text-[#292929]">
+                        OEM
+                    </h3>
+
+                </div>
+
+
+                <!-- PARA -->
+                <p class="font-['Cormorant_Garamond'] font-normal text-[13px] text-[#555555] mb-3">
+                    You bring the design. We make it real.
+                </p>
+
+
+                <!-- LIST -->
+                <div class="flex flex-col gap-1.5">
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Manufacture as per your tech pack
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Fabric & trim sourcing
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Sampling and size set
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Bulk production
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Your brand, your specifications
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LINK -->
+                <a href="#"
+                   class="inline-block mt-4 font-['DM_Sans'] font-[600] text-[12px] tracking-[0.08em] text-[#C88A00] uppercase">
+                    EXPLORE OEM →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= ODM ================= -->
+
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] grid grid-cols-1 sm:grid-cols-[40%_60%] min-h-[250px]">
+
+            <!-- IMAGE -->
+            <div
+                class="h-[250px] sm:h-auto bg-cover bg-center"
+                style="background-image:url('../images/oem-odm/odmm.png')">
+            </div>
+
+
+            <!-- CONTENT -->
+            <div class="px-5 py-5">
+
+                <!-- ICON + TITLE -->
+                <div class="flex items-center gap-8 mb-2">
+
+                    <div class="w-14 h-14 shrink-0 rounded-full border border-[#C88A00] flex items-center justify-center">
+
+                        <i data-lucide="lightbulb"
+                           class="w-7 h-7 text-[#C88A00] stroke-[1.3]">
+                        </i>
+
+                    </div>
+
+                    <h3 class="font-['Inter'] font-[600] text-[16px] text-[#292929]">
+                        ODM
+                    </h3>
+
+                </div>
+
+
+                <!-- PARA -->
+                <p class="font-['Cormorant_Garamond'] font-normal text-[13px] text-[#555555] mb-3">
+                    You bring the idea. We help create it.
+                </p>
+
+
+                <!-- LIST -->
+                <div class="flex flex-col gap-1.5">
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Concept and trend development
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            In-house design support
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Fabric & trim recommendations
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            Sampling and product development
+                        </p>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2">
+
+                        <div class="w-3 h-3 shrink-0 rounded-full bg-[#C88A00] flex items-center justify-center">
+                            <span class="text-white text-[8px] leading-none">✓</span>
+                        </div>
+
+                        <p class="font-['DM_Serif_Display'] font-normal text-[12.8px] tracking-wide text-gray-500">
+                            End-to-end manufacturing
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LINK -->
+                <a href="#"
+                   class="inline-block mt-4 font-['DM_Sans'] font-[600] text-[12px] tracking-[0.08em] text-[#C88A00] uppercase">
+                    EXPLORE ODM →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LUCIDE -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+
+
+<!-- =========================
+     WHAT WE MANUFACTURE
+========================= -->
+
+<section class="px-6 lg:px-14 py-10 lg:py-16">
+
+    <!-- HEADING -->
+    <div class="flex items-center justify-between mb-5">
+
+        <div class="flex items-center gap-5">
+
+            <h2 class="font-['Cormorant_Garamond'] font-normal text-[32px] leading-none text-[#292929]">
+                What we manufacture
+            </h2>
+
+            <span class="w-7 h-px bg-[#C88A00]"></span>
+
+        </div>
+
+        <p class="hidden sm:block font-['Inter'] font-[400] text-[10px] text-[#666666]">
+            Wide product range. Customizable to your market.
+        </p>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+
+
+        <!-- DRESSES -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('../images/home/dress.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Dresses</h3>
+
+                <a href="pages/products.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CO-ORD SETS -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('../images/home/co-ordset.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">CO-Ord Set</h3>
+
+                <a href="pages/products.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOPS & BLOUSES -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('../images/home/tops-tuincs.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Tops & Tunics </h3>
+
+                <a href="pages/products.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESORT WEAR -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('../images/home/resot.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Resort wear</h3>
+
+                <a href="pages/products.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- KURTAS -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('../images/home/kaftan.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Kaftan</h3>
+
+                <a href="pages/products.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+       
+
+        <!-- LOUNGEWEAR -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('../images/home/co-ordset.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">CO-Ord Set</h3>
+
+                <a href="pages/products.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[#FAF8F3] py-6 lg:py-7 px-6 lg:px-14">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-[310px_1fr] gap-8 lg:gap-12 items-center">
+
+    <!-- Left Text -->
+    <div class="w-[510px]">
+      <span class="block w-7 h-px bg-[#C88A00] mb-3"></span>
+
+      <h2 class="font-['Cormorant_Garamond'] text-[28px] lg:text-[30px] leading-10 text-[#292929] ">
+        One manufacturing<br>
+        partner, from development<br>
+        to export.
+      </h2>
+    </div>
+
+    <!-- Capabilities -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-5">
+
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full border border-[#C88A00]/40 flex items-center justify-center">
+          <i data-lucide="pencil" class="w-6 h-6 text-[#C88A00] stroke-[1.7]"></i>
+        </div>
+        <p class="mt-2 text-[11px] leading-tight text-[#292929] font-medium">
+          Design &<br>Development
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full border border-[#C88A00]/40 flex items-center justify-center">
+          <i data-lucide="layers" class="w-6 h-6 text-[#C88A00] stroke-[1.7]"></i>
+        </div>
+        <p class="mt-2 text-[11px] leading-tight text-[#292929]">
+          Fabric & Trim<br>Sourcing
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full border border-[#C88A00]/40 flex items-center justify-center">
+          <i data-lucide="shirt" class="w-6 h-6 text-[#C88A00] stroke-[1.7]"></i>
+        </div>
+        <p class="mt-2 text-[11px] leading-tight text-[#292929]">
+          Sampling
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full border border-[#C88A00]/40 flex items-center justify-center">
+          <i data-lucide="factory" class="w-6 h-6 text-[#C88A00] stroke-[1.7]"></i>
+        </div>
+        <p class="mt-2 text-[11px] leading-tight text-[#292929]">
+          Bulk<br>Production
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full border border-[#C88A00]/40 flex items-center justify-center">
+          <i data-lucide="circle-check" class="w-6 h-6 text-[#C88A00] stroke-[1.7]"></i>
+        </div>
+        <p class="mt-2 text-[11px] leading-tight text-[#292929]">
+          Quality<br>Control
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="w-14 h-14 mx-auto rounded-full border border-[#C88A00]/40 flex items-center justify-center">
+          <i data-lucide="globe" class="w-6 h-6 text-[#C88A00] stroke-[1.7]"></i>
+        </div>
+        <p class="mt-2 text-[11px] leading-tight text-[#292929]">
+          Export &<br>Shipping
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+
+
+
+
+
+<section class="bg-white py-8 lg:py-10 px-6 lg:px-14">
+
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+    <div class="flex items-center gap-4 mb-7">
+      <h2 class="font-['Cormorant_Garamond'] text-[30px] lg:text-[32px] leading-none text-[#292929]">
+        Our process
+      </h2>
+      <span class="w-7 h-px bg-[#C88A00]"></span>
+    </div>
+
+    <div class="grid lg:grid-cols-[1fr_285px] gap-8 lg:gap-10 items-start">
+
+      <!-- Process -->
+      <div class="grid grid-cols-1 sm:grid-cols-5 gap-6 sm:gap-0">
+
+        <!-- 01 -->
+        <div class="relative text-center sm:px-3">
+          <div class="hidden sm:block absolute top-5 left-1/2 w-full h-px bg-[#C88A00]/30"></div>
+
+          <div class="relative z-10 w-10 h-10 mx-auto rounded-full border border-[#C88A00]/50 bg-white flex items-center justify-center">
+            <span class="text-[11px] text-[#C88A00]">01</span>
+          </div>
+
+          <h3 class="font-['Cormorant_Garamond'] text-[17px] mt-3 text-[#292929]">
+            Brief
+          </h3>
+
+          <p class="text-[11px] leading-[1.35] text-[#777] mt-1 max-w-[150px] mx-auto">
+            Share your concept, reference, tech pack or target quantity.
+          </p>
+        </div>
+
+        <!-- 02 -->
+        <div class="relative text-center sm:px-3">
+          <div class="hidden sm:block absolute top-5 left-0 w-full h-px bg-[#C88A00]/30"></div>
+
+          <div class="relative z-10 w-10 h-10 mx-auto rounded-full border border-[#C88A00]/50 bg-white flex items-center justify-center">
+            <span class="text-[11px] text-[#C88A00]">02</span>
+          </div>
+
+          <h3 class="font-['Cormorant_Garamond'] text-[17px] mt-3 text-[#292929]">
+            Development
+          </h3>
+
+          <p class="text-[11px] leading-[1.35] text-[#777] mt-1 max-w-[150px] mx-auto">
+            We refine specifications, fabrics and construction.
+          </p>
+        </div>
+
+        <!-- 03 -->
+        <div class="relative text-center sm:px-3">
+          <div class="hidden sm:block absolute top-5 left-0 w-full h-px bg-[#C88A00]/30"></div>
+
+          <div class="relative z-10 w-10 h-10 mx-auto rounded-full border border-[#C88A00]/50 bg-white flex items-center justify-center">
+            <span class="text-[11px] text-[#C88A00]">03</span>
+          </div>
+
+          <h3 class="font-['Cormorant_Garamond'] text-[17px] mt-3 text-[#292929]">
+            Sampling
+          </h3>
+
+          <p class="text-[11px] leading-[1.35] text-[#777] mt-1 max-w-[150px] mx-auto">
+            Review the physical sample and request revisions.
+          </p>
+        </div>
+
+        <!-- 04 -->
+        <div class="relative text-center sm:px-3">
+          <div class="hidden sm:block absolute top-5 left-0 w-full h-px bg-[#C88A00]/30"></div>
+
+          <div class="relative z-10 w-10 h-10 mx-auto rounded-full border border-[#C88A00]/50 bg-white flex items-center justify-center">
+            <span class="text-[11px] text-[#C88A00]">04</span>
+          </div>
+
+          <h3 class="font-['Cormorant_Garamond'] text-[17px] mt-3 text-[#292929]">
+            Approval
+          </h3>
+
+          <p class="text-[11px] leading-[1.35] text-[#777] mt-1 max-w-[150px] mx-auto">
+            Approve fit, fabric, measurements and finishing.
+          </p>
+        </div>
+
+        <!-- 05 -->
+        <div class="relative text-center sm:px-3">
+          <div class="hidden sm:block absolute top-5 left-0 w-full h-px bg-[#C88A00]/30"></div>
+
+          <div class="relative z-10 w-10 h-10 mx-auto rounded-full border border-[#C88A00]/50 bg-white flex items-center justify-center">
+            <span class="text-[11px] text-[#C88A00]">05</span>
+          </div>
+
+          <h3 class="font-['Cormorant_Garamond'] text-[17px] mt-3 text-[#292929]">
+            Production
+          </h3>
+
+          <p class="text-[11px] leading-[1.35] text-[#777] mt-1 max-w-[150px] mx-auto">
+            We manufacture, inspect and prepare your order for shipment.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Right Feature Card -->
+      <div>
+
+        <p class="text-[10px] text-[#888] mb-3 text-right">
+          A streamlined process for a smoother experience.
+        </p>
+
+        <div class="relative overflow-hidden bg-[#FAF7EF] min-h-[140px] px-6 py-6">
+
+          <h3 class="relative z-10 font-['Cormorant_Garamond'] italic text-[21px] leading-[1.05] text-[#292929] max-w-[150px]">
+            Thoughtful<br>
+            Manufacturing<br>
+            Lasting Impact
+          </h3>
+
+          <span class="relative z-10 block w-7 h-px bg-[#C88A00] mt-4"></span>
+
+          <!-- Decorative leaves -->
+          <div class="absolute right-[-15px] bottom-[-35px] opacity-60">
+            <i data-lucide="leaf" class="w-28 h-28 text-[#C88A00] stroke-[0.7]"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<script>
+  lucide.createIcons();
+</script>
+
+
+
+
+
+<!-- 7. FINAL CTA -->
+<section id="contact"
+         class="bg-[#FAF8F3] py-20 lg:py-22">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <p class="text-xs tracking-widest font-medium text-amber-400 mb-5">
+      READY TO BUILD YOUR COLLECTION?
+    </p>
+
+    <h2 class="font-serif text-4xl sm:text-5xl">
+      Let's Build Something
+      <span class="italic">Beautiful.</span>
+    </h2>
+
+    <p class="text-gray-600 max-w-xl mx-auto mt-5 leading-relaxed">
+      Share your sketches, references or requirements.
+      Our team will guide you through the next step.
+    </p>
+
+    <a href="pages/quote.html"
+       class="inline-block mt-8 bg-amber-500 text-white px-9 rounded-md py-3 text-xs font-semibold tracking-wider">
+      START YOUR PROJECT →
+    </a>
+
+  </div>
+</section>
+
+
+<footer class="bg-[#121210] text-gray-400 px-6 py-12">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+
+      <!-- Brand -->
+      <div>
+        <h2 class="font-serif text-2xl tracking-[0.2em] text-white">
+          TEEJ India Textiles
+        </h2>
+
+        <p class="text-sm leading-6 mt-5 max-w-xs">
+          Women's apparel manufacturer and exporter from Jaipur, India.
+          Est. 2011.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mt-7">
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            IEC CERTIFIED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            GST REGISTERED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            EST. 2011
+          </span>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">PRODUCTS</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#">Dresses</a>
+          <a href="#">Co-ord Sets</a>
+          <a href="#" class="block text-white">Resort Wear</a>
+          <a href="#">Kaftans</a>
+          <a href="#">Plus Size</a>
+          <a href="#" class="block">View all →</a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">SERVICES</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">Private Label</a>
+          <a href="#" class="block">OEM / ODM</a>
+          <a href="#" class="block">Sampling</a>
+          <a href="#" class="block">Custom Manufacturing</a>
+          <a href="#" class="block">Quality Control</a>
+        </div>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">COMPANY</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#" class="block">About Us</a>
+          <a href="#" class="block">Factory</a>
+          <a href="#" class="block">Export Markets</a>
+          <a href="#" class="block">Blog</a>
+          <a href="#" class="block">Contact</a>
+          <a href="#" class="block text-amber-400">Get Quote →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-12 pt-7 flex flex-col
+                md:flex-row justify-between gap-4 text-xs">
+
+      <p>
+        © 2025 Teej India Textiles. All rights reserved.
+        Jaipur, Rajasthan, India.
+      </p>
+
+      <div class="flex gap-6">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

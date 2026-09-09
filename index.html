@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teej India Textiles</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#C88A00',
+                        dark: '#292929'
+                    },
+                    fontFamily: {
+                     serif: ['Cormorant Garamond', 'serif'],
+                      sans: ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="text-dark">
+
+    <!-- Navbar -->
+    <nav class="border-b">
+
+        <div class="relative max-w-7xl mx-auto px-2">
+
+            <!-- Navbar Row -->
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Hamburger -->
+                <button id="menuButton" class="lg:hidden text-2xl">
+                    ☰
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html"
+                   class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-2xl md:text-4xl">Teej</h1>
+                        <p class="text-[10x] tracking-widest text-amber-500">
+                            India Textiles
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex gap-8 items-center justify-center">
+                     <a href="index.html">Home</a>
+                    <a href="pages/products.html">Product</a>
+                    <a href="pages/private-label.html">Private Labels</a>
+                    <a href="pages/oem-odm.html">OEM/ODM</a>
+                    <a href="pages/factory.html">Factory</a>
+                    <a href="pages/about.html">About</a>
+                    <a href="pages/blog.html">Blog</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Request Catalog: Desktop only -->
+    <a 
+    href="pages/catalog.html"
+    class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
+        Request Catalog
+    </a>
+
+
+    <!-- Get Quote: Always visible -->
+    <a 
+    href="pages/quote.html"
+    class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
+        Get Quote
+    </a>
+
+</div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t py-4">
+                <div class="flex flex-col gap-4">
+                     <a href="index.html">Home</a>
+                    <a href="pages/products.html">Product</a>
+                    <a href="pages/private-label.html">Private Labels</a>
+                    <a href="pages/oem-odm.html">Oem/Odm</a>
+                    <a href="pages/factory.html">Factory</a>
+                    <a href="pages/about.html">About</a>
+                    <a href="pages/blog.html">Blog</a>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
+
+        button.onclick = () => {
+            menu.classList.toggle('hidden');
+            button.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+        };
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--hero section start-->
+
+<section class="bg-none sm:bg-[url('images/home/banner.png')] bg-cover bg-[position:68%_center] bg-no-repeat min-h-fit sm:min-h-[78vh]">
+    <!-- Hero Content -->
+    <div class="flex items-center px-6 py-10 sm:py-0 sm:min-h-[80vh] sm:px-14 lg:px-20 py-4 lg:py-8">
+
+        <div class="max-w-2xl text-left space-y-6">
+        <p class="text-xs md:text-md tracking-widest text-amber-500 mb-6">WOMEN'S APPAREL · MANUFACTURING & EXPORT</p>
+
+        <h1 class="font-serif font-normal text-4xl sm:text-5xl lg:text-[70px] tracking-wider leading-[1.08]" >
+            Women's Apparel
+            Manufacturer
+        </h1>
+
+        <p class="mt-4 text-amber-500 italic text-md font-serif tracking-wider">Made in Jaipur.</p>
+
+        <p class="text-sm sm:text-base text-gray-600 max-w-md leading-relaxed mb-6">
+            From first sketch to shipped carton, we help fashion
+            brands create beautiful collections with consistency
+            and care.
+        </p>
+
+        <p class="tracking-widest text-sm sm:text-base font-semibold">Private Label • OEM • ODM</p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a class="text-sm lg:text-[18px]  tracking-wide text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-16 py-5 text-center " href="pages/catalog.html">Request Catalog</a>
+            <a class="text-sm lg:text-[18px] text-center text-black bg-mist-50 border border-1 border-amber-200 rounded-md shadow-sm px-4 lg:px-10 py-4 text-center" href="pages/quote.html">Start A Project</a>
+        </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--hero section end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     WHAT WE MANUFACTURE
+========================= -->
+
+<section class="px-6 lg:px-14 py-10 lg:py-16">
+
+    <!-- HEADING -->
+    <div class="flex items-center justify-between mb-5">
+
+        <div class="flex items-center gap-5">
+
+            <h2 class="font-['Cormorant_Garamond'] font-normal text-[32px] leading-none text-[#292929]">
+                What we manufacture
+            </h2>
+
+            <span class="w-7 h-px bg-[#C88A00]"></span>
+
+        </div>
+
+        <p class="hidden sm:block font-['Inter'] font-[400] text-[10px] text-[#666666]">
+            Wide product range. Customizable to your market.
+        </p>
+
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+
+
+        <!-- DRESSES -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('images/home/dress.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Dresses</h3>
+
+                <a href="pages/categories/dresses.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CO-ORD SETS -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('images/home/co-ordset.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">CO-Ord Set</h3>
+
+                <a href="pages/categories/coord-sets.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOPS & BLOUSES -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('images/home/tops-tuincs.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Tops & Tunics </h3>
+
+                <a href="pages/categories/tops-tunics.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESORT WEAR -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('images/home/resot.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Resort wear</h3>
+
+                <a href="pages/categories/resort-wear.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- KURTAS -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('images/home/kaftan.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">Kaftan</h3>
+
+                <a href="pages/categories/kaftan.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+       
+
+        <!-- LOUNGEWEAR -->
+        <div class="border border-[#E5E1D8] bg-[#FCFBF8] overflow-hidden rounded-sm shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+
+            <div class="h-[285px] bg-cover bg-top"
+                 style="background-image:url('images/home/co-ordset.jpg')">
+            </div>
+
+            <div class="flex items-center justify-between px-3 py-2">
+
+                 <h3 class="text-xs">CO-Ord Set</h3>
+
+                <a href="pages/categories/coord-sets.html" class="text-[#C88A00] text-sm"> →
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Manufacturing Routes -->
+
+<section class="py-14 px-6 lg:px-15 bg-[#faf7f0]">
+
+    <div class="max-w-[1500px] mx-auto grid lg:grid-cols-[380px_1fr] gap-8 items-center">
+
+        <!-- Left Content -->
+
+        <div>
+
+            <p class="text-[12px] tracking-[0.2em] text-amber-500 mb-4">
+                CHOOSE YOUR MANUFACTURING ROUTE
+            </p>
+
+            <h2 class="font-serif text-3xl lg:text-5xl leading-tight">
+                Your Vision,
+                <br>
+                Our Manufacturing
+                <br>
+                Expertise
+            </h2>
+
+            <p class="text-md text-gray-600 leading-5 mt-5 max-w-sm">
+                Whether you have a brand, a design, or just an idea —
+                we offer flexible manufacturing solutions tailored to your needs.
+            </p>
+
+            <a href="#quote"
+               class="inline-block border border-amber-400
+                      px-6 py-3 mt-6
+                      text-[12px] font-medium
+                      hover:bg-amber-400 hover:text-white transition">
+                FIND YOUR BEST FIT →
+            </a>
+
+        </div>
+
+
+        <!-- Cards -->
+
+        <div class="grid md:grid-cols-3 gap-14">
+
+            <!-- Private Label -->
+
+            <div class="w-full md:w-[330px] bg-white border border-amber-100 p-7 min-h-[380px] 
+            hover:-translate-y-1 hover:shadow-md transition flex flex-col">
+
+                <div class="w-16 h-16 rounded-full border border-2 border-amber-400
+                            flex items-center justify-center">
+                    <i data-lucide="tag"
+                       class="w-7 h-7 text-amber-500"></i>
+                </div>
+
+                <h3 class="text-sm font-[550] mt-10 text-black/80 tracking-wider">
+                    PRIVATE LABEL
+                </h3>
+
+                <p class="text-[15.1px] text-gray-500 leading-6 mt-8">
+                    Your brand, our expertise.
+                    Complete production from
+                    fabric to finished pieces.
+                </p>
+
+                <a href="pages/private-label.html"
+                   class="inline-block font-['DM_Sans'] text-[12.5px] font-semibold tracking-wide text-amber-500 mt-auto">
+                    LEARN MORE →
+                </a>
+
+            </div>
+
+
+            <!-- OEM -->
+            <div class="w-full md:w-[330px] bg-white border border-amber-100 p-7 min-h-[380px] 
+            hover:-translate-y-1 hover:shadow-md transition flex flex-col">
+
+                <div class="w-16 h-16 rounded-full border border-2 border-amber-400
+                            flex items-center justify-center">
+                    <i data-lucide="package"
+                       class="w-7 h-7 text-amber-500"></i>
+                </div>
+
+                <h3 class="text-sm font-[550] mt-10 text-black/80 tracking-wider">
+                    PRODUCTS
+                </h3>
+
+                <p class="text-[15.1px] text-gray-500 leading-6 mt-8">
+                    Your brand, our expertise.
+                    Complete production from
+                    fabric to finished pieces.
+                </p>
+
+                <a href="pages/products.html"
+                   class="inline-block font-['DM_Sans'] text-[12.5px] font-semibold tracking-wide text-amber-500 mt-auto">
+                    LEARN MORE →
+                </a>
+
+            </div>
+
+
+            <!-- ODM -->
+              <div class="w-full md:w-[330px] bg-white border border-amber-100 p-7 min-h-[380px] 
+            hover:-translate-y-1 hover:shadow-md transition flex flex-col">
+
+                <div class="w-16 h-16 rounded-full border border-2 border-amber-400
+                            flex items-center justify-center">
+                    <i data-lucide="factory"
+                       class="w-7 h-7 text-amber-500"></i>
+                </div>
+
+                <h3 class="text-sm font-[550] mt-10 text-black/80 tracking-wider">
+                    OEM/ODM
+                </h3>
+
+                <p class="text-[15.1px] text-gray-500 leading-6 mt-8">
+                    Your brand, our expertise.
+                    Complete production from
+                    fabric to finished pieces.
+                </p>
+
+                <a href="pages/oem-odm.html"
+                   class="inline-block font-['DM_Sans'] text-[12.5px] font-semibold tracking-wide text-amber-500 mt-auto">
+                    LEARN MORE →
+                </a>
+
+            </div>
+            
+
+               
+        </div>
+
+    </div>
+
+
+    <!-- Decorative Leaf -->
+
+    <img src="images/home/leaf.jpg"
+         class="absolute right-0 -mt-72 w-48 opacity-30"
+         alt="">
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Manufacturing Process -->
+
+<section class="py-0 bg-white">
+
+    <div class="grid lg:grid-cols-2 items-center">
+
+        <!-- Image -->
+
+        <div class="h-[450px]">
+            <img src="images/home/factory2.jpg"
+                 class="w-full h-full object-cover"
+                 alt="Teej manufacturing process">
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="px-8 py-12 lg:px-10 xl:px-12">
+
+            <p class="font-['DM_Sans'] text-[12px] tracking-[0.22em]
+                      text-amber-500 mb-4">
+                OUR PROCESS
+            </p>
+
+            <h2 class="font-serif text-4xl lg:text-[42px] leading-[1.05]">
+                From concept to creation,
+                <br>
+                we handle it all.
+            </h2>
+
+            <p class="font-['DM_Sans'] text-[14px] text-gray-400 tracking-wide
+                      leading-5 mt-5 max-w-xl">
+                A seamless manufacturing journey with transparency
+                at every step.
+            </p>
+
+
+            <!-- Process -->
+
+            <div class="grid grid-cols-6 gap-3 mt-7
+                        border-y border-gray-100 py-5">
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full border border-amber-200
+                                flex items-center justify-center">
+                        <i data-lucide="pencil-ruler"
+                           class="w-7 h-7 text-amber-400 stroke-[1.4]"></i>
+                    </div>
+                    <p class="font-['DM_Sans'] text-[13.4px] text-gray-600 tracking-wider
+                              leading-6 mt-2">
+                        Design Support
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full border border-amber-200
+                                flex items-center justify-center">
+                        <i data-lucide="layers"
+                           class="w-7 h-7 text-amber-400 stroke-[1.4]"></i>
+                    </div>
+                    <p class="font-['DM_Sans'] text-[13.4px] text-gray-600 tracking-wider
+                              leading-6 mt-2">
+                        Fabric Sourcing
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full border border-amber-400
+                                flex items-center justify-center">
+                        <i data-lucide="scissors"
+                           class="w-7 h-7 text-amber-400 stroke-[1.4]"></i>
+                    </div>
+                    <p class="font-['DM_Sans'] text-[13.4px] text-gray-600 tracking-wider
+                              leading-6 mt-2">
+                        Sampling & Development
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full border border-amber-400
+                                flex items-center justify-center">
+                        <i data-lucide="factory"
+                           class="w-7 h-7 text-amber-400 stroke-[1.4]"></i>
+                    </div>
+                    <p class="font-['DM_Sans'] text-[13.4px] text-gray-600 tracking-wider
+                              leading-6 mt-2">
+                        Production
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full border border-amber-200
+                                flex items-center justify-center">
+                        <i data-lucide="badge-check"
+                           class="w-7 h-7 text-amber-400 strok00e-[1.4]"></i>
+                    </div>
+                    <p class="font-['DM_Sans'] text-[13.4px] text-gray-600 tracking-wider
+                              leading-6 mt-2">
+                        Quality Control
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 mx-auto rounded-full border border-amber-200
+                                flex items-center justify-center">
+                        <i data-lucide="globe"
+                           class="w-7 h-7 text-amber-400 stroke-[1.5]"></i>
+                    </div>
+                    <p class="font-['DM_Sans'] text-[13.4px] text-gray-600 tracking-wider
+                              leading-6 mt-2">
+                        Global Shipping
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+
+            <a href="pages/factory.html"
+               class="inline-block font-['DM_Sans'] text-[10px]
+                      font-medium tracking-widest text-amber-500
+                      border border-amber-300 px-5 py-3 mt-5
+                      hover:bg-amber-400 hover:text-white transition">
+                EXPLORE OUR PROCESS →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Sustainability -->
+
+<section class="py-16 px-6 lg:px-20 bg-[#faf7f0]">
+
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+
+        <!-- Content -->
+
+        <div>
+
+            <p class="text-[10px] tracking-[0.2em] text-amber-500 mb-4">
+                SUSTAINABLE FASHION, BRIGHTER FUTURE
+            </p>
+
+            <h2 class="font-serif text-4xl lg:text-5xl leading-tight">
+                Quality You Can Trust,
+                <br>
+                Practices for a Better Tomorrow
+            </h2>
+
+            <p class="text-[15.2px] text-gray-500 leading-6 mt-4 max-w-xl">
+                We are committed to responsible manufacturing with ethical
+                practices, safe working environments, and sustainable processes.
+            </p>
+
+
+            <!-- Features -->
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-7">
+
+                <div>
+                    <i data-lucide="factory"
+                       class="w-6 h-6 text-amber-500 mb-2"></i>
+                    <p class="text-[11px] text-gray-600">
+                        Ethical<br>Production
+                    </p>
+                </div>
+
+                <div>
+                    <i data-lucide="heart-handshake"
+                       class="w-6 h-6 text-amber-500 mb-2"></i>
+                    <p class="text-[11px] text-gray-600">
+                        Responsible<br>Sourcing
+                    </p>
+                </div>
+
+                <div>
+                    <i data-lucide="leaf"
+                       class="w-6 h-6 text-amber-500 mb-2"></i>
+                    <p class="text-[11px] text-gray-600">
+                        Low Impact<br>Processes
+                    </p>
+                </div>
+
+                <div>
+                    <i data-lucide="users"
+                       class="w-6 h-6 text-amber-500 mb-2"></i>
+                    <p class="text-[11px] text-gray-600">
+                        Long-Term<br>Partnerships
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Button -->
+
+            <a href="pages/sustainability.html"
+               class="inline-block border border-amber-400
+                      px-6 py-3 mt-7
+                      text-[10px] font-medium tracking-wide
+                      hover:bg-amber-400 hover:text-white transition">
+
+                OUR COMMITMENT →
+
+            </a>
+
+        </div>
+
+
+        <!-- Image -->
+
+        <div class="h-[350px] lg:h-[400px]">
+
+            <img src="images/home/commitment.jpg"
+                 class="w-full h-full object-cover"
+                 alt="Sustainable textile manufacturing">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- GLOBAL PRESENCE -->
+<section class="bg-white px-6 py-12">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+
+    <!-- 1/2 -->
+    <div class="w-full lg:w-1/3 flex flex-col gap-4">
+      <p class="text-[12px] tracking-widest text-amber-400 font-semibold">
+        GLOBAL PRESENCE
+      </p>
+
+      <h2 class="font-serif font-medium text-2xl lg:text-4xl leading-tight mt-2">
+        From Jaipur to<br>the world.
+      </h2>
+
+      <p class="text-[13.8px] text-gray-700 leading-6 mt-3 max-w-[260px] tracking-wide">
+        Proudly manufacturing in India for leading fashion brands across the globe.
+      </p>
+
+      <button class=" font-['DM_Sans'] text-[13px] text-amber-400 font-semibold tracking-widest mt-4">
+        OUR MARKETS →
+      </button>
+    </div>
+
+    <!-- 3/4 -->
+    <div class="w-full lg:w-2/3 flex flex-col sm:flex-row items-center gap-6">
+
+      <!-- Map -->
+      <img src="images/home/map.png"
+           alt="World Map"
+           class="w-full sm:w-3/5 h-54 sm:h-56 lg:h-64 object-contain">
+
+      <!-- Countries -->
+      <img src="images/home/country.png"
+           alt="Countries"
+           class="w-full sm:w-3/5 h-54 sm:h-56 lg:h-64 object-contain">
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- GET QUOTE -->
+<section id="quote" class="bg-[#f8f6f2] px-6 py-12 lg:py-16">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+
+    <!-- Left -->
+    <div>
+      <p class="text-[10px] tracking-[0.25em] text-amber-400">
+        GET IN TOUCH
+      </p>
+
+      <h2 class="font-serif text-4xl lg:text-5xl leading-tight mt-5">
+        Ready to source?<br>
+        Let's <span class="italic text-stone-400">talk.</span>
+      </h2>
+
+      <p class="text-sm text-gray-500 leading-7 mt-5 max-w-xl">
+        Tell us your requirement and we'll come back within 24 hours
+        with pricing, lead times and a sampling plan.
+      </p>
+
+      <div class="mt-12 text-sm">
+
+        <div class="flex py-5 border-b border-stone-200">
+          <span class="w-24 text-[9px] tracking-widest text-gray-500">RESPONSE</span>
+          <span>Within 24 hours on business days</span>
+        </div>
+
+        <div class="flex py-5 border-b border-stone-200">
+          <span class="w-24 text-[9px] tracking-widest text-gray-500">MIN. ORDER</span>
+          <span>From 100 pieces per style</span>
+        </div>
+
+        <div class="flex py-5 border-b border-stone-200">
+          <span class="w-24 text-[9px] tracking-widest text-gray-500">SAMPLING</span>
+          <span>7–10 business days</span>
+        </div>
+
+        <div class="flex py-5 border-b border-stone-200">
+          <span class="w-24 text-[9px] tracking-widest text-gray-500">BULK LEAD</span>
+          <span>45–60 days from approved sample</span>
+        </div>
+
+        <div class="flex py-5 border-b border-stone-200">
+          <span class="w-24 text-[9px] tracking-widest text-gray-500">PRICING</span>
+          <span>USD and EUR available on request</span>
+        </div>
+
+        <div class="flex py-5">
+          <span class="w-24 text-[9px] tracking-widest text-gray-500">WHATSAPP</span>
+          <span class="text-amber-400">+91 XXXXX XXXXX</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Form -->
+    <div class="border border-stone-200 rounded-2xl p-6 lg:p-10">
+
+      <p class="text-[10px] tracking-[0.25em] text-amber-400">
+        SEND AN ENQUIRY
+      </p>
+
+      <h3 class="font-serif text-2xl lg:text-3xl mt-4">
+        Start your order today
+      </h3>
+
+      <form action="send.php" method="POST" class="mt-8 space-y-5">
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="text-[10px] tracking-widest text-gray-500">
+            NAME *
+            <input name="name" type="text" required
+              placeholder="Your name"
+              class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                     outline-none focus:border-amber-400">
+          </label>
+
+          <label class="text-[10px] tracking-widest text-gray-500">
+            COMPANY *
+            <input name="company" type="text" required
+              placeholder="Brand / company"
+              class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                     outline-none focus:border-amber-400">
+          </label>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="text-[10px] tracking-widest text-gray-500">
+            COUNTRY *
+            <input name="country" type="text" required
+              placeholder="Type your country"
+              class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                     outline-none focus:border-amber-400">
+          </label>
+
+          <label class="text-[10px] tracking-widest text-gray-500">
+            EMAIL *
+            <input name="email" type="email" required
+              placeholder="you@brand.com"
+              class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                     outline-none focus:border-amber-400">
+          </label>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="text-[10px] tracking-widest text-gray-500">
+            WHATSAPP
+            <input name="whatsapp" type="tel"
+              placeholder="+1 000 000 0000"
+              class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                     outline-none focus:border-amber-400">
+          </label>
+
+          <label class="text-[10px] tracking-widest text-gray-500">
+            QUANTITY (APPROX)
+            <input name="quantity" type="text"
+              placeholder="e.g. 500 pcs"
+              class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                     outline-none focus:border-amber-400">
+          </label>
+        </div>
+
+        <label class="block text-[10px] tracking-widest text-gray-500">
+          PRODUCT REQUIREMENT *
+          <input name="product" type="text" required
+            placeholder="e.g. Dresses, Resort Wear, Co-ord Sets"
+            class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                   outline-none focus:border-amber-400">
+        </label>
+
+        <label class="block text-[10px] tracking-widest text-gray-500">
+          ADDITIONAL NOTES
+          <textarea name="notes" rows="4"
+            placeholder="Fabric preferences, target market, custom labelling needs..."
+            class="w-full mt-2 border border-stone-300 bg-transparent p-3 text-sm
+                   outline-none focus:border-amber-400"></textarea>
+        </label>
+
+        <button type="submit"
+          class="w-full bg-amber-400 hover:bg-amber-500 text-white
+                 py-4 text-xs font-semibold tracking-widest transition">
+          SEND ENQUIRY →
+        </button>
+
+        <p class="text-center text-[10px] text-gray-500">
+          We reply within 24 hours · Your information is never shared
+        </p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<footer class="bg-[#121210] text-gray-400 px-6 py-12">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+
+      <!-- Brand -->
+      <div>
+        <h2 class="font-serif text-2xl tracking-[0.2em] text-white">
+          TEEJ India Textiles
+        </h2>
+
+        <p class="text-sm leading-6 mt-5 max-w-xs">
+          Women's apparel manufacturer and exporter from Jaipur, India.
+          Est. 2011.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mt-7">
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            IEC CERTIFIED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            GST REGISTERED
+          </span>
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            EST. 2011
+          </span>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">PRODUCTS</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="#">Dresses</a>
+          <a href="#">Co-ord Sets</a>
+          <a href="#" class="block text-white">Resort Wear</a>
+          <a href="#">Kaftans</a>
+          <a href="#">Plus Size</a>
+          <a href="#" class="block">View all →</a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+  <h3 class="text-[10px] tracking-[0.25em] text-amber-400">
+    PRODUCT CATEGORIES
+  </h3>
+
+  <div class="space-y-4 mt-7 text-sm">
+
+    <a href="pages/categories/dresses.html" class="block hover:text-amber-400 transition">
+      Dresses
+    </a>
+
+    <a href="pages/categories/kaftans.html" class="block hover:text-amber-400 transition">
+      Kaftans
+    </a>
+
+    <a href="pages/categories/tops-tunics.html" class="block hover:text-amber-400 transition">
+      Tops & Tunics
+    </a>
+
+    <a href="pages/categories/resort-wear.html" class="block hover:text-amber-400 transition">
+      Resort Wear
+    </a>
+
+    <a href="pages/categories/loungewear-nightwear.html" class="block hover:text-amber-400 transition">
+      Loungewear & Nightwear
+    </a>
+
+    <a href="pages/categories/coord-sets.html" class="block hover:text-amber-400 transition">
+      Co-ord Sets
+    </a>
+
+  </div>
+</div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">COMPANY</h3>
+        <div class="space-y-4 mt-7 text-sm">
+          <a href="pages/about.html" class="block">About Us</a>
+<a href="pages/factory.html" class="block">Factory</a>
+<a href="pages/oem-odm.html" class="block">OEM / ODM</a>
+<a href="pages/blog.html" class="block">Blog</a>
+<a href="pages/quote.html" class="block">Contact</a>
+<a href="pages/quote.html" class="block text-amber-400">Get Quote →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-gray-800 mt-12 pt-7 flex flex-col
+                md:flex-row justify-between gap-4 text-xs">
+
+      <p>
+        © 2025 Teej India Textiles. All rights reserved.
+        Jaipur, Rajasthan, India.
+      </p>
+
+      <div class="flex gap-6">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
