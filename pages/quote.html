@@ -39,148 +39,91 @@
      NAVBAR
 ========================================================= -->
 
-<nav class="bg-white border-b border-[#E5E0D8]">
+<!-- Navbar -->
+    <nav class="border-b">
 
-  <div class="max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-10">
+        <div class="relative max-w-7xl mx-auto px-2">
 
-    <div class="relative flex items-center justify-between h-20">
+            <!-- Navbar Row -->
+            <div class="flex items-center justify-between h-20">
 
-      <!-- Mobile Menu Button -->
-      <button
-        id="menuButton"
-        class="lg:hidden text-[#292929]"
-        aria-label="Open menu">
+                <!-- Hamburger -->
+                <button id="menuButton" class="lg:hidden text-2xl">
+                    ☰
+                </button>
 
-        <i data-lucide="menu" class="w-6 h-6"></i>
+                <!-- Logo -->
+                <a href="index.html"
+                   class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-serif text-2xl md:text-4xl">Teej</h1>
+                        <p class="text-[10x] tracking-widest text-amber-500">
+                            India Textiles
+                        </p>
+                    </div>
+                </a>
 
-      </button>
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex gap-8 items-center justify-center">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                   <a href="private-label.html">Private Labels</a>
+                   <a href="oem-odm.html">OEM/ODM</a>
+                   <a href="factory.html">Factory</a>
+                   <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+
+    <!-- Request Catalog: Desktop only -->
+    <a 
+    href="products.html"
+    class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
+        Request Catalog
+    </a>
 
 
-      <!-- Logo -->
-      <a
-        href="../index.html"
-        class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0">
+    <!-- Get Quote: Always visible -->
+    <a 
+    href="pages/quote.html"
+    class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
+        Get Quote
+    </a>
 
-        <div class="text-center lg:text-left leading-none">
+</div>
 
-          <h1 class="font-serif text-3xl md:text-4xl">
-            Teej
-          </h1>
+            </div>
 
-          <p class="text-[9px] md:text-[10px] tracking-[0.22em] text-amber-600 mt-1">
-            India Textiles
-          </p>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden border-t py-4">
+                <div class="flex flex-col gap-4">
+                    <a href="../index.html">Home</a>
+                    <a href="products.html">Product</a>
+                    <a href="private-label.html">Private Labels</a>
+                    <a href="oem-odm.html">OEM/ODM</a>
+                    <a href="factory.html">Factory</a>
+                    <a href="about.html">About</a>
+                    <a href="blog.html">Blog</a> 
+                </div>
+            </div>
 
         </div>
 
-      </a>
+    </nav>
 
 
-      <!-- Desktop Menu -->
-      <div class="hidden lg:flex items-center gap-7 xl:gap-9 text-[13px]">
+    <!-- JavaScript -->
+    <script>
+        const button = document.getElementById('menuButton');
+        const menu = document.getElementById('mobileMenu');
 
-        <a href="../index.html"
-           class="hover:text-amber-600 transition">
-          Home
-        </a>
-
-        <a href="products.html"
-           class="hover:text-amber-600 transition">
-          Product
-        </a>
-
-        <a href="private-label.html"
-           class="hover:text-amber-600 transition">
-          Private Labels
-        </a>
-
-        <a href="oem-odm.html"
-           class="hover:text-amber-600 transition">
-          OEM/ODM
-        </a>
-
-        <a href="factory.html"
-           class="hover:text-amber-600 transition">
-          Factory
-        </a>
-
-        <a href="about.html"
-           class="hover:text-amber-600 transition">
-          About
-        </a>
-
-        <a href="blog.html"
-           class="hover:text-amber-600 transition">
-          Blog
-        </a>
-
-      </div>
-
-
-      <!-- Desktop Actions -->
-      <div class="hidden lg:flex items-center gap-3">
-
-        <a
-          href="catalog.html"
-          class="border border-[#C88A00] px-6 py-3 text-[12px] hover:bg-[#C88A00] hover:text-white transition">
-
-          Request Catalog
-
-        </a>
-
-        <a
-          href="quote.html"
-          class="bg-[#C88A00] text-white px-7 py-3 text-[12px] hover:bg-[#A97000] transition">
-
-          Get Quote
-
-        </a>
-
-      </div>
-
-
-      <!-- Mobile Right Action -->
-      <a
-        href="quote.html"
-        class="lg:hidden bg-[#C88A00] text-white px-4 py-2 text-[10px] tracking-wide">
-
-        Get Quote
-
-      </a>
-
-    </div>
-
-
-    <!-- Mobile Menu -->
-    <div
-      id="mobileMenu"
-      class="hidden lg:hidden border-t border-[#E5E0D8] py-5">
-
-      <div class="flex flex-col gap-4 text-sm">
-
-        <a href="../index.html">Home</a>
-        <a href="products.html">Product</a>
-        <a href="private-label.html">Private Labels</a>
-        <a href="oem-odm.html">OEM/ODM</a>
-        <a href="factory.html">Factory</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-
-        <a
-          href="catalog.html"
-          class="border border-[#C88A00] text-center py-3 mt-2">
-
-          Request Catalog
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</nav>
+        button.onclick = () => {
+            menu.classList.toggle('hidden');
+            button.textContent = menu.classList.contains('hidden') ? '☰' : '✕';
+        };
+    </script>
 
 
 
@@ -1015,174 +958,177 @@
      FOOTER
 ========================================================= -->
 
-<footer class="bg-[#202020] text-white">
+<footer class="bg-[#121210] text-gray-400 px-6 py-12">
+  <div class="max-w-6xl mx-auto">
 
-  <div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16 py-14 lg:py-16">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
-
-
-      <!-- About -->
+      <!-- Brand -->
       <div>
-
-        <h2 class="font-serif text-4xl">
-          Teej
+        <h2 class="font-serif text-2xl tracking-[0.2em] text-white">
+          TEEJ India Textiles
         </h2>
 
-        <p class="font-serif text-xl text-[#D0D0D0]">
-          India Textiles
-        </p>
-
-        <p class="text-[11px] text-[#999] leading-6 mt-5 max-w-[250px]">
+        <p class="text-sm leading-6 mt-5 max-w-xs">
           Women's apparel manufacturer and exporter from Jaipur, India.
+          Est. 2011.
         </p>
 
+        <div class="flex flex-wrap gap-2 mt-7">
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            IEC CERTIFIED
+          </span>
+
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            GST REGISTERED
+          </span>
+
+          <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
+            EST. 2011
+          </span>
+        </div>
       </div>
 
 
       <!-- Product Categories -->
       <div>
-
-        <h3 class="text-[10px] tracking-[0.22em] text-amber-400">
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">
           PRODUCT CATEGORIES
         </h3>
 
-        <div class="space-y-3 mt-6 text-[12px] text-[#C5C5C5]">
+        <div class="space-y-4 mt-7 text-sm">
 
-          <a href="categories/dresses.html" class="block hover:text-amber-400 transition">
+          <a href="categories/dresses.html"
+             class="block hover:text-amber-400 transition">
             Dresses
           </a>
 
-          <a href="categories/kaftans.html" class="block hover:text-amber-400 transition">
+          <a href="categories/kaftan.html"
+             class="block hover:text-amber-400 transition">
             Kaftans
           </a>
 
-          <a href="categories/tops-tunics.html" class="block hover:text-amber-400 transition">
+          <a href="categories/tops-tunics.html"
+             class="block hover:text-amber-400 transition">
             Tops & Tunics
           </a>
 
-          <a href="categories/resort-wear.html" class="block hover:text-amber-400 transition">
+          <a href="categories/resort-wear.html"
+             class="block hover:text-amber-400 transition">
             Resort Wear
           </a>
 
-          <a href="categories/loungewear-nightwear.html" class="block hover:text-amber-400 transition">
+          <a href="categories/loungewear-nightwear.html"
+             class="block hover:text-amber-400 transition">
             Loungewear & Nightwear
           </a>
 
-          <a href="categories/coord-sets.html" class="block hover:text-amber-400 transition">
+          <a href="categories/coord-sets.html"
+             class="block hover:text-amber-400 transition">
             Co-ord Sets
           </a>
 
         </div>
-
       </div>
 
 
       <!-- Company -->
       <div>
-
-        <h3 class="text-[10px] tracking-[0.22em] text-amber-400">
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">
           COMPANY
         </h3>
 
-        <div class="space-y-3 mt-6 text-[12px] text-[#C5C5C5]">
+        <div class="space-y-4 mt-7 text-sm">
 
-          <a href="about.html" class="block hover:text-amber-400 transition">
+          <a href="about.html"
+             class="block hover:text-amber-400 transition">
             About Us
           </a>
 
-          <a href="factory.html" class="block hover:text-amber-400 transition">
+          <a href="factory.html"
+             class="block hover:text-amber-400 transition">
             Factory
           </a>
 
-          <a href="private-label.html" class="block hover:text-amber-400 transition">
+          <a href="private-label.html"
+             class="block hover:text-amber-400 transition">
             Private Label
           </a>
 
-          <a href="oem-odm.html" class="block hover:text-amber-400 transition">
+          <a href="oem-odm.html"
+             class="block hover:text-amber-400 transition">
             OEM / ODM
           </a>
 
-          <a href="blog.html" class="block hover:text-amber-400 transition">
+          <a href="blog.html"
+             class="block hover:text-amber-400 transition">
             Blog
           </a>
 
-          <a href="quote.html" class="block text-amber-400">
+          <a href="quote.html"
+             class="block hover:text-amber-400 transition">
+            Contact
+          </a>
+
+          <a href="quote.html"
+             class="block text-amber-400">
             Get Quote →
           </a>
 
         </div>
-
       </div>
 
 
-      <!-- Contact -->
+      <!-- Work With Us -->
       <div>
-
-        <h3 class="text-[10px] tracking-[0.22em] text-amber-400">
-          STAY CONNECTED
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">
+          WORK WITH US
         </h3>
 
-        <div class="space-y-4 mt-6 text-[12px] text-[#C5C5C5]">
+        <p class="text-sm leading-6 mt-7 max-w-xs">
+          Looking for a reliable apparel manufacturing partner
+          for your next collection?
+        </p>
 
-          <p>
-            sales@teejindia.com
-          </p>
-
-          <p>
-            +91 00000 00000
-          </p>
-
-          <p>
-            Jaipur, Rajasthan, India
-          </p>
-
-        </div>
-
-        <div class="flex gap-5 mt-6">
-
-          <a href="#" class="hover:text-amber-400 transition">
-            <i data-lucide="linkedin" class="w-4 h-4"></i>
-          </a>
-
-          <a href="#" class="hover:text-amber-400 transition">
-            <i data-lucide="instagram" class="w-4 h-4"></i>
-          </a>
-
-        </div>
-
+        <a href="quote.html"
+           class="inline-block mt-6 border border-amber-400
+                  text-amber-400 px-5 py-3 text-[10px]
+                  tracking-[0.15em] hover:bg-amber-400
+                  hover:text-black transition">
+          START A PROJECT →
+        </a>
       </div>
 
     </div>
 
 
     <!-- Bottom -->
-    <div class="border-t border-[#3A3A3A] mt-12 pt-6 flex flex-col md:flex-row justify-between gap-4 text-[10px] text-[#888]">
+    <div class="border-t border-gray-800 mt-12 pt-7
+                flex flex-col md:flex-row
+                justify-between gap-4 text-xs">
 
       <p>
-        © 2025 Teej India Textiles. All rights reserved. Jaipur, India.
+        © 2025 Teej India Textiles. All rights reserved.
+        Jaipur, Rajasthan, India.
       </p>
 
       <div class="flex gap-6">
-
-        <a href="#" class="hover:text-white">
+        <a href="#" class="hover:text-white transition">
           Privacy Policy
         </a>
 
-        <a href="#" class="hover:text-white">
+        <a href="#" class="hover:text-white transition">
           Terms of Use
         </a>
 
-        <a href="#" class="hover:text-white">
+        <a href="#" class="hover:text-white transition">
           Sitemap
         </a>
-
       </div>
 
     </div>
 
   </div>
-
 </footer>
 
 

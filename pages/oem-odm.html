@@ -73,7 +73,7 @@
 
     <!-- Request Catalog: Desktop only -->
     <a 
-    href="pages/catalog.html"
+    href="catalog.html"
     class="hidden sm:block text-sm sm:text-base text-black bg-white border border-amber-400 rounded-md shadow-sm px-4 lg:px-10 py-3">
         Request Catalog
     </a>
@@ -81,7 +81,7 @@
 
     <!-- Get Quote: Always visible -->
     <a 
-    href="pages/quote.html"
+    href="quote.html"
     class="text-sm sm:text-base text-white bg-amber-500 rounded-md shadow-sm px-4 lg:px-8 py-2 lg:py-3">
         Get Quote
     </a>
@@ -977,58 +977,134 @@
           <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
             IEC CERTIFIED
           </span>
+
           <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
             GST REGISTERED
           </span>
+
           <span class="border border-gray-700 px-3 py-2 text-[9px] tracking-widest">
             EST. 2011
           </span>
         </div>
       </div>
 
-      <!-- Products -->
+
+      <!-- Product Categories -->
       <div>
-        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">PRODUCTS</h3>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">
+          PRODUCT CATEGORIES
+        </h3>
+
         <div class="space-y-4 mt-7 text-sm">
-          <a href="#">Dresses</a>
-          <a href="#">Co-ord Sets</a>
-          <a href="#" class="block text-white">Resort Wear</a>
-          <a href="#">Kaftans</a>
-          <a href="#">Plus Size</a>
-          <a href="#" class="block">View all →</a>
+
+          <a href="categories/dresses.html"
+             class="block hover:text-amber-400 transition">
+            Dresses
+          </a>
+
+          <a href="categories/kaftans.html"
+             class="block hover:text-amber-400 transition">
+            Kaftans
+          </a>
+
+          <a href="categories/tops-tunics.html"
+             class="block hover:text-amber-400 transition">
+            Tops & Tunics
+          </a>
+
+          <a href="categories/resort-wear.html"
+             class="block hover:text-amber-400 transition">
+            Resort Wear
+          </a>
+
+          <a href="categories/loungewear-nightwear.html"
+             class="block hover:text-amber-400 transition">
+            Loungewear & Nightwear
+          </a>
+
+          <a href="categories/coord-sets.html"
+             class="block hover:text-amber-400 transition">
+            Co-ord Sets
+          </a>
+
         </div>
       </div>
 
-      <!-- Services -->
-      <div>
-        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">SERVICES</h3>
-        <div class="space-y-4 mt-7 text-sm">
-          <a href="#" class="block">Private Label</a>
-          <a href="#" class="block">OEM / ODM</a>
-          <a href="#" class="block">Sampling</a>
-          <a href="#" class="block">Custom Manufacturing</a>
-          <a href="#" class="block">Quality Control</a>
-        </div>
-      </div>
 
       <!-- Company -->
       <div>
-        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">COMPANY</h3>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">
+          COMPANY
+        </h3>
+
         <div class="space-y-4 mt-7 text-sm">
-          <a href="#" class="block">About Us</a>
-          <a href="#" class="block">Factory</a>
-          <a href="#" class="block">Export Markets</a>
-          <a href="#" class="block">Blog</a>
-          <a href="#" class="block">Contact</a>
-          <a href="#" class="block text-amber-400">Get Quote →</a>
+
+          <a href="about.html"
+             class="block hover:text-amber-400 transition">
+            About Us
+          </a>
+
+          <a href="factory.html"
+             class="block hover:text-amber-400 transition">
+            Factory
+          </a>
+
+          <a href="private-label.html"
+             class="block hover:text-amber-400 transition">
+            Private Label
+          </a>
+
+          <a href="oem-odm.html"
+             class="block hover:text-amber-400 transition">
+            OEM / ODM
+          </a>
+
+          <a href="blog.html"
+             class="block hover:text-amber-400 transition">
+            Blog
+          </a>
+
+          <a href="quote.html"
+             class="block hover:text-amber-400 transition">
+            Contact
+          </a>
+
+          <a href="quote.html"
+             class="block text-amber-400">
+            Get Quote →
+          </a>
+
         </div>
+      </div>
+
+
+      <!-- Work With Us -->
+      <div>
+        <h3 class="text-[10px] tracking-[0.25em] text-amber-400">
+          WORK WITH US
+        </h3>
+
+        <p class="text-sm leading-6 mt-7 max-w-xs">
+          Looking for a reliable apparel manufacturing partner
+          for your next collection?
+        </p>
+
+        <a href="quote.html"
+           class="inline-block mt-6 border border-amber-400
+                  text-amber-400 px-5 py-3 text-[10px]
+                  tracking-[0.15em] hover:bg-amber-400
+                  hover:text-black transition">
+          START A PROJECT →
+        </a>
       </div>
 
     </div>
 
+
     <!-- Bottom -->
-    <div class="border-t border-gray-800 mt-12 pt-7 flex flex-col
-                md:flex-row justify-between gap-4 text-xs">
+    <div class="border-t border-gray-800 mt-12 pt-7
+                flex flex-col md:flex-row
+                justify-between gap-4 text-xs">
 
       <p>
         © 2025 Teej India Textiles. All rights reserved.
@@ -1036,9 +1112,17 @@
       </p>
 
       <div class="flex gap-6">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Sitemap</a>
+        <a href="#" class="hover:text-white transition">
+          Privacy Policy
+        </a>
+
+        <a href="#" class="hover:text-white transition">
+          Terms of Use
+        </a>
+
+        <a href="#" class="hover:text-white transition">
+          Sitemap
+        </a>
       </div>
 
     </div>
