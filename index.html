@@ -58,13 +58,13 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden lg:flex gap-8 items-center justify-center">
-                     <a href="index.html">Home</a>
-                    <a href="pages/products.html">Product</a>
-                    <a href="pages/private-label.html">Private Labels</a>
-                    <a href="pages/oem-odm.html">OEM/ODM</a>
-                    <a href="pages/factory.html">Factory</a>
-                    <a href="pages/about.html">About</a>
-                    <a href="pages/blog.html">Blog</a>
+                     <a href="index.html" class="nav-link">Home</a>
+                    <a href="pages/products.html" class="nav-link">Product</a>
+                    <a href="pages/private-label.html" class="nav-link">Private Labels</a>
+                    <a href="pages/oem-odm.html" class="nav-link">OEM/ODM</a>
+                    <a href="pages/factory.html" class="nav-link">Factory</a>
+                    <a href="pages/about.html" class="nav-link">About</a>
+                    <a href="pages/blog.html" class="nav-link">Blog</a>
                 </div>
 
                 <!-- Buttons -->
@@ -1089,6 +1089,18 @@
 </footer>
 <script>
     lucide.createIcons();
+</script>
+
+<script>
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+document.querySelectorAll(".nav-link").forEach(link => {
+    const linkPage = link.getAttribute("href").split("/").pop();
+
+    if (linkPage === currentPage) {
+        link.classList.add("border-b-2", "border-[#C88A00]", "pb-2");
+    }
+});
 </script>
 </body>
 </html>
